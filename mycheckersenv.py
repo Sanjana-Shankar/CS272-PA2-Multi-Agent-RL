@@ -538,6 +538,17 @@ class Checkers6x6AECEnv(AECEnv):
             return
 
         move = legal_actions[action]
+
+        # Track whether this move captures or promotes
+        is_capture = move.is_capture
+        sr, sc = move.start
+        er, ec = move.end
+        moving_piece = self.engine.board[sr][sc]
+        will_promote = (
+            (moving_piece == P0_MAN and er == 0) or
+            (moving_piece == P1_MAN and er == BOARD_SIZE - 1)
+        )
+
         applied = self.engine.apply_move(move)
 
         if not applied:
@@ -545,12 +556,19 @@ class Checkers6x6AECEnv(AECEnv):
 
         self.turn_count += 1
 
+        # Shaped rewards
+        if is_capture:
+            self.rewards[agent] += 0.05
+
+        if will_promote:
+            self.rewards[agent] += 0.1
+
         # If a player won, assign terminal rewards
         if self.engine.winner is not None:
             winner_agent = self.possible_agents[self.engine.winner]
             loser_agent = self.possible_agents[1 - self.engine.winner]
-            self.rewards[winner_agent] = 1.0
-            self.rewards[loser_agent] = -1.0
+            self.rewards[winner_agent] += 1.0
+            self.rewards[loser_agent] -= -1.0
             self.terminations = {a: True for a in self.agents}
 
         # If game has been going on for too long, truncate the game

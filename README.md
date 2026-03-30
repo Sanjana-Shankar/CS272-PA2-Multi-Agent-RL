@@ -70,6 +70,8 @@ action = from_square * 36 + to_square
 
 | Event        | Reward                |
 | ------------ | --------------------- |
+| Capture      | +0.05                 |
+| King         | +0.10                 |
 | Win          | +1                    |
 | Loss         | -1                    |
 | Illegal move | -1 (opponent gets +1) |
@@ -235,10 +237,10 @@ Verify:
 #### Final Output
 
 ```text
-Final rewards: {'player_0': 1.0, 'player_1': -1.0}
+Final rewards: {'player_0': 1.05, 'player_1': 1.0}
 Terminations: {'player_0': True, 'player_1': True}
 Truncations: {'player_0': False, 'player_1': False}
-Total steps: 21
+Total steps: 53
 PASS: Full random-play test completed successfully.
 ```
 
