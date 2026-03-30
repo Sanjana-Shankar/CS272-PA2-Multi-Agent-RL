@@ -12,7 +12,7 @@ import torch
 import torch.optim as optim 
 import numpy as np 
 
-from mycheckersenv import env 
+from mycheckersenv import env
 from myagent import ActorCritic, select_action 
 
 def train_self_play(num_episodes=500, gamma=0.99, lr=1e-3):
@@ -26,28 +26,29 @@ def train_self_play(num_episodes=500, gamma=0.99, lr=1e-3):
         print(f"\n=== Episode {episode + 1} ===")
         environment.reset()
         episode_reward = 0.0
-        
-        '''
-        last_value = None
-        last_log_prob = None 
-        last_agent = None 
-        '''
 
         for agent in environment.agent_iter(max_iter=500):
+
+            # Get las step info
             obs, reward, termination, truncation, info = environment.last()
 
             episode_reward += reward 
 
+            # If game ended, pass None action 
             if termination or truncation:
                 environment.step(None)
                 continue
             
+            # Select action using policy
             action, log_prob, value = select_action(model, obs)
-
+            
+            # Apply action
             environment.step(action)
-
+            
+            # Get next state
             next_obs, next_reward, next_termination, next_truncation, _ = environment.last()
 
+            # Compute TD target 
             if next_termination or next_truncation:
                 target = torch.tensor(next_reward, dtype=torch.float32)
             else:
@@ -58,12 +59,19 @@ def train_self_play(num_episodes=500, gamma=0.99, lr=1e-3):
                     _, next_value = model(next_state)
                 target = torch.tensor(next_reward, dtype=torch.float32) + gamma * next_value.squeeze()
             
+            # TD error
             advantage = target - value
 
+            # Actor loss (policy gradient)
             actor_loss = -log_prob * advantage.detach()
+
+            # Critic loss (value regression)
             critic_loss = advantage.pow(2)
+
+            # Total loss
             loss = actor_loss + critic_loss 
 
+            # Backpropagation
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()

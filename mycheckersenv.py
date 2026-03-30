@@ -9,9 +9,8 @@ from pettingzoo.utils import agent_selector, wrappers
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 
-# =========================
+
 # Core game constants
-# =========================
 
 # Board encoding
 EMPTY = 0
@@ -23,7 +22,11 @@ P1_MAN = -1
 P1_KING = -2
 
 BOARD_SIZE = 6
+
 NUM_SQUARES = BOARD_SIZE * BOARD_SIZE
+
+# Fixed discrete action space: Every action is "move from one square to another square"
+# Total possible actions = 36 * 36 = 1296
 ACTION_SIZE = NUM_SQUARES * NUM_SQUARES
 
 Position = Tuple[int, int]
@@ -37,18 +40,26 @@ Position = Tuple[int, int]
 # data integrity and making them safe to use as dictionary keys or in sets
 @dataclass(frozen=True)
 class Move:
-  start: Position
-  end: Position
-  captured: Optional[Position] = None
+    '''
+    Move stores: 
+    - Start position
+    - End position 
+    - Optionally the captured piece position
+    - frozen=True makes Move immutable after creation since moves should not change once created
+    '''
+    start: Position
+    end: Position
+    captured: Optional[Position] = None
 
-  # Define methods in a class that can be accessed like attributes without explicitly
-  # calling them as functions
-  # Its commonly used to provide a "getter" method for an attribute
-  # add logic like validation, computation, or formatting, when an attribute is accessed,
-  # while still maintaining a clean, attribute-like interface for the user of the class
-  @property
-  def is_capture(self) -> bool:
-    return self.captured is not None
+    # Define methods in a class that can be accessed like attributes without explicitly
+    # calling them as functions
+    # Its commonly used to provide a "getter" method for an attribute
+    # add logic like validation, computation, or formatting, when an attribute is accessed,
+    # while still maintaining a clean, attribute-like interface for the user of the class
+    @property
+    def is_capture(self) -> bool:
+        # If the move captures the piece of an opponent, returns True
+        return self.captured is not None
 class Checkers6x6:
   '''
   Includes:
@@ -158,6 +169,14 @@ class Checkers6x6:
       return [(-1, -1), (-1, 1), (1, -1), (1, 1)] # Can move any direction diagonally up or down
 
   def get_normal_moves_for_piece(self, row: int, col: int) -> List[Move]:
+    '''
+    This function generates all non-capturing moves for one piece. 
+
+    Returns an empty list in the following cases: 
+    - square is out of bounds 
+    - square is empty
+    - piece does not belong to current player
+    '''
     if not self._in_bounds(row, col):
       return []
 
@@ -176,6 +195,13 @@ class Checkers6x6:
     return moves
 
   def get_capture_moves_for_piece(self, row: int, col: int) -> List[Move]:
+    '''
+    Generate all capturing moves for one piece 
+
+    A capture is legal in the following cases:
+    - Adjacent diagonal square has opponent piece 
+    - Square beyond it is empty
+    '''
     if not self._in_bounds(row, col):
       return []
 
@@ -207,6 +233,10 @@ class Checkers6x6:
     return captures
 
   def _get_all_capture_moves(self) -> List[Move]:
+    '''
+    This function returns all legal capture moves for the current player. If a multi-jump 
+    is in progress, only captures form forced_piece are allowed.
+    '''
     captures: List[Move] = []
 
     if self.forced_piece is not None:
@@ -219,6 +249,10 @@ class Checkers6x6:
     return captures
 
   def _get_all_normal_moves(self) -> List[Move]:
+    '''
+    This function generates all non-capturing moves for the current player. If a multi-jump
+    is in progress, normal moves are not allowed.
+    '''
     moves: List[Move] = []
 
     # During a multi-jump continuation, normal moves are not allowed.
@@ -244,12 +278,17 @@ class Checkers6x6:
 
   def apply_move(self, move: Move) -> bool:
       '''
-      Applies a move if legal, updates the board, promotes kings,
-      checks for winner, and switches turns.
-      - Mandatory captures enforced
-      - After a capture, if another capture is available from the landing square,
-      the same player continues with that same piece
-      - otherwise turn switches
+      Applies a legal move to the board 
+      - checks legality
+      - moves the piece 
+      - removes the captured piece if needed 
+      - promotes to king if needed 
+      - checks for winner 
+      - handles multi-jump continuation 
+      - switches turns when appropriate 
+
+      If the move was applied successfully, function will return True 
+      If move is illegal or game has already ended, function will return False
       '''
       if self.winner is not None:
         return False
@@ -261,34 +300,37 @@ class Checkers6x6:
       sr, sc = move.start
       er, ec = move.end
 
+      # Move the piece
       piece = self.board[sr][sc]
       self.board[sr][sc] = EMPTY
       self.board[er][ec] = piece
-
+      
+      # Remove the captured opponent piece
       if move.is_capture and move.captured is not None:
         cr, cc = move.captured
         self.board[cr][cc] = EMPTY
-
-      self._promote_if_needed(er, ec)
+    
+      # If piece reaches last row, it becomes a king
+      self._promote_to_king(er, ec)
       self._update_winner()
 
       if self.winner is not None:
         return True
 
-      # Multi-jump continuation
+      # Multi-jump continuation: If capture was made, check whether another jump is available
       if move.is_capture:
         further_captures = self.get_capture_moves_for_piece(er, ec)
         if further_captures:
           self.forced_piece = (er, ec)
           return True
 
-      # End turn
+      # Otherwise, end turn and switch players
       self.forced_piece = None
       self.current_player = 1 - self.current_player
       self._update_winner()
       return True
 
-  def _promote_if_needed(self, row: int, col: int) -> None:
+  def _promote_to_king(self, row: int, col: int) -> None:
       piece = self.board[row][col]
 
       if piece == P0_MAN and row == 0:
@@ -305,22 +347,28 @@ class Checkers6x6:
       return count
 
   def _player_has_any_moves(self, player: int) -> bool:
-      saved_player = self.current_player
-      saved_forced_piece = self.forced_piece
+    '''
+    Check whether a player has at least one legal move. Temporarily switches current_player to 
+    test move availability then restores the original state.
+    '''
+    saved_player = self.current_player
+    saved_forced_piece = self.forced_piece
 
-      self.current_player = player
-      self.forced_piece = None
-      moves_exist = len(self.get_all_legal_moves()) > 0
+    self.current_player = player
+    self.forced_piece = None
+    moves_exist = len(self.get_all_legal_moves()) > 0
 
-      self.current_player = saved_player
-      self.forced_piece = saved_forced_piece
-      return moves_exist
+    self.current_player = saved_player
+    self.forced_piece = saved_forced_piece
+    return moves_exist
 
   def _update_winner(self) -> None:
       '''
+      Determine whether the game has ended 
+
       Win condition:
-      - opponent has no pieces
-      - oppoenent has no legal moves
+      - opponent has no pieces left
+      - opponent has no legal moves left
       '''
       p0_count = self._count_player_pieces(0)
       p1_count = self._count_player_pieces(1)
@@ -343,225 +391,273 @@ class Checkers6x6:
 
 # Phase 3 of Task 1: Petting Zoo AEC Environment
 class Checkers6x6AECEnv(AECEnv):
-  metadata = {
-      "name": "checkers_6x6_v0",
-      "render_modes": ["human"],
-      "is_parallelizable": False,
-  }
-
-  def __init__(self, max_turns: int = 200, render_mode: Optional[str] = None):
-    super().__init__()
-
-    self.render_mode = render_mode
-    self.max_turns = max_turns
-
-    self.possible_agents = ["player_0", "player_1"]
-    self.agent_name_mapping = {
-        "player_0": 0,
-        "player_1": 1,
+    '''
+    This wraps the core engine so RL agents can interact with it using the PettingZoo API.
+    '''
+    metadata = {
+        "name": "checkers_6x6_v0",
+        "render_modes": ["human"],
+        "is_parallelizable": False,
     }
 
-    self.engine = Checkers6x6()
-    self.turn_count = 0
+    def __init__(self, max_turns: int = 200, render_mode: Optional[str] = None):
+        super().__init__()
 
-    self._action_spaces = {
-        agent: spaces.Discrete(ACTION_SIZE) for agent in self.possible_agents
-    }
+        self.render_mode = render_mode
+        self.max_turns = max_turns # Prevents endless games
 
-    self._observation_spaces = {
-        agent: spaces.Dict(
-            {
-                "Observation": spaces.Box(
-                    low=-2,
-                    high=2,
-                    shape=(BOARD_SIZE, BOARD_SIZE),
-                    dtype=np.int8,
-                ),
-                "action_mask": spaces.Box(
-                    low=0,
-                    high=1,
-                    shape=(ACTION_SIZE,),
-                    dtype=np.int8,
-                ),
-            }
-        )
-        for agent in self.possible_agents
-    }
+        self.possible_agents = ["player_0", "player_1"]
+        self.agent_name_mapping = {
+            "player_0": 0,
+            "player_1": 1,
+        }
+
+        self.engine = Checkers6x6()
+        self.turn_count = 0 # Number of turns played in current episode
+
+        # Same fixed action space for both players
+        self._action_spaces = {
+            agent: spaces.Discrete(ACTION_SIZE) for agent in self.possible_agents
+        }
+
+        '''
+        Observation contains: 
+        - board state 
+        - legal action mask
+        '''
+        self._observation_spaces = {
+            agent: spaces.Dict(
+                {
+                    "Observation": spaces.Box(
+                        low=-2,
+                        high=2,
+                        shape=(BOARD_SIZE, BOARD_SIZE),
+                        dtype=np.int8,
+                    ),
+                    "action_mask": spaces.Box(
+                        low=0,
+                        high=1,
+                        shape=(ACTION_SIZE,),
+                        dtype=np.int8,
+                    ),
+                }
+            )
+            for agent in self.possible_agents
+        }
 
 
-  def observation_space(self, agent: str):
-    return self._observation_spaces[agent]
+    def observation_space(self, agent: str):
+        # Return the observation space for a specific agent
+        return self._observation_spaces[agent]
 
-  def action_space(self, agent: str):
-    return self._action_spaces[agent]
+    def action_space(self, agent: str):
+        # Return the action space for a specific agent
+        return self._action_spaces[agent]
 
-  def reset(self, seed: Optional[int] = None, options: Optional[dict] = None):
-    self.engine.reset()
-    self.turn_count = 0
+    def reset(self, seed: Optional[int] = None, options: Optional[dict] = None):
+        '''
+        Resent the environment to the initiial state and the following fields: 
+        - rewards 
+        - terminations
+        - truncations 
+        - infos 
+        - current agent turn
+        '''
+        self.engine.reset()
+        self.turn_count = 0
 
-    self.agents = self.possible_agents[:]
-    self.rewards = {agent: 0.0 for agent in self.agents}
-    self._cumulative_rewards = {agent: 0.0 for agent in self.agents}
-    self.terminations = {agent: False for agent in self.agents}
-    self.truncations = {agent: False for agent in self.agents}
-    self.infos = {
-        agent: {"legal_moves": []} for agent in self.agents
-    }
-    self._agent_selector = agent_selector.agent_selector(self.agents)
-    self.agent_selection = self.possible_agents[self.engine.current_player]
+        self.agents = self.possible_agents[:]
+        self.rewards = {agent: 0.0 for agent in self.agents}
+        self._cumulative_rewards = {agent: 0.0 for agent in self.agents}
+        self.terminations = {agent: False for agent in self.agents}
+        self.truncations = {agent: False for agent in self.agents}
+        self.infos = {
+            agent: {"legal_moves": []} for agent in self.agents
+        }
+        self._agent_selector = agent_selector.agent_selector(self.agents)
+        # Engine decides who moves first
+        self.agent_selection = self.possible_agents[self.engine.current_player]
 
-    self._update_infos()
+        self._update_infos()
 
-  def observe(self, agent: str) -> Dict[str, np.ndarray]:
-    board = np.array(self.engine.board, dtype=np.int8);
+    def observe(self, agent: str) -> Dict[str, np.ndarray]:
+        '''
+        Return the current observation for an agent. The board is flipped in sign for player_1
+        so that each agent sees its own pieces as positive and opponent pieces as negative.
+        '''
+        board = np.array(self.engine.board, dtype=np.int8)
 
-    # Optional perspective flip:
-    # current agent sees own pieces as positive
-    player_idx = self.agent_name_mapping[agent]
-    if player_idx == 1:
-      board = -board
+        # Perspective flip:
+        # current agent sees own pieces as positive
+        player_idx = self.agent_name_mapping[agent]
+        if player_idx == 1:
+            board = -board
 
-    action_mask = self._get_action_mask(agent)
-    return {
-        "Observation": board,
-        "action_mask": action_mask,
-    }
+        action_mask = self._get_action_mask(agent)
+        return {
+            "Observation": board,
+            "action_mask": action_mask,
+        }
 
-  def step(self, action: int) -> None:
-    if self.terminations[self.agent_selection] or self.truncations[self.agent_selection]:
-      self._was_dead_step(action)
-      return
+    def step(self, action: int) -> None:
+        '''
+        Advance the environment by one action. 
+        This function does the following: 
+        - checks if current agent is dead/terminated
+        - validates the action 
+        - applies the move through the engine 
+        - updates rewards, terminations, truncations 
+        - keeps same player on multi-jump if needed
+        '''
+        if self.terminations[self.agent_selection] or self.truncations[self.agent_selection]:
+            self._was_dead_step(action)
+            return
 
-    agent = self.agent_selection
-    player_idx = self.agent_name_mapping[agent]
+        agent = self.agent_selection
+        player_idx = self.agent_name_mapping[agent]
 
-    if player_idx != self.engine.current_player:
-      raise ValueError("It is not {agent} turn.")
+        if player_idx != self.engine.current_player:
+            raise ValueError("It is not {agent}'s turn.")
+        
+        # Map encoded actions to Move objects
+        legal_moves  = self.engine.get_all_legal_moves()
+        legal_actions = {self.encode_move(m): m for m in legal_moves}
 
-    legal_moves  = self.engine.get_all_legal_moves()
-    legal_actions = {self.encode_move(m): m for m in legal_moves}
+        # Clear step rewards
+        self.rewards = {a: 0.0 for a in self.agents}
 
-    self.rewards = {a: 0.0 for a in self.agents}
+        # Illegal action immediately loses the game
+        if action not in legal_actions:
+            # Illegal action penalty
+            self.rewards[agent] = -1.0
+            other = self.possible_agents[1 - player_idx]
+            self.rewards[other] = 1.0
 
-    if action not in legal_actions:
-      # Illegal action penalty
-      self.rewards[agent] = -1.0
-      other = self.possible_agents[1 - player_idx]
-      self.rewards[other] = 1.0
+            self.terminations = {a: True for a in self.agents}
+            self._accumulate_rewards()
+            return
 
-      self.terminations = {a: True for a in self.agents}
-      self._accumulate_rewards()
-      return
+        move = legal_actions[action]
+        applied = self.engine.apply_move(move)
 
-    move = legal_actions[action]
-    prev_player = self.engine.current_player
-    applied = self.engine.apply_move(move)
+        if not applied:
+            raise RuntimeError("Legal move failed to apply unexpectedly.")
 
-    if not applied:
-      raise RuntimeError("Legal move failed to apply unexpectedly.")
+        self.turn_count += 1
 
-    self.turn_count += 1
+        # If a player won, assign terminal rewards
+        if self.engine.winner is not None:
+            winner_agent = self.possible_agents[self.engine.winner]
+            loser_agent = self.possible_agents[1 - self.engine.winner]
+            self.rewards[winner_agent] = 1.0
+            self.rewards[loser_agent] = -1.0
+            self.terminations = {a: True for a in self.agents}
 
-    # Terminal rewards
-    if self.engine.winner is not None:
-      winner_agent = self.possible_agents[self.engine.winner]
-      loser_agent = self.possible_agents[1 - self.engine.winner]
-      self.rewards[winner_agent] = 1.0
-      self.rewards[loser_agent] = -1.0
-      self.terminations = {a: True for a in self.agents}
+        # If game has been going on for too long, truncate the game
+        elif self.turn_count >= self.max_turns:
+            self.truncations = {a: True for a in self.agents}
+            self._update_infos()
 
-    elif self.turn_count >= self.max_turns:
-      self.truncations = {a: True for a in self.agents}
-    self._update_infos()
+        # If the game continues, set next player according to engine state 
+        if not any(self.terminations.values()) and not any(self.truncations.values()):
+         self.agent_selection = self.possible_agents[self.engine.current_player]
 
-    # If multi-jump continues, same player goes again
-    if not any(self.terminations.values()) and not any(self.truncations.values()):
-      self.agent_selection = self.possible_agents[self.engine.current_player]
+        self._accumulate_rewards()
 
-    self._accumulate_rewards()
+        if self.render_mode == "human":
+            self.render()
 
-    if self.render_mode == "human":
-      self.render()
+    def render(self) -> None:
+        piece_to_char = {
+            EMPTY: ".",
+            P0_MAN: "r",
+            P0_KING: "R",
+            P1_MAN: "b",
+            P1_KING: "B",
+        }
 
-  def render(self) -> None:
-    piece_to_char = {
-        EMPTY: ".",
-        P0_MAN: "r",
-        P0_KING: "R",
-        P1_MAN: "b",
-        P1_KING: "B",
-    }
+        print(" " + " ".join(str(c) for c in range(BOARD_SIZE)))
+        for r in range(BOARD_SIZE):
+            row_str = " ".join(piece_to_char[self.engine.board[r][c]] for c in range(BOARD_SIZE))
+            print(f"{r} {row_str}")
+        print(f"Current player: player_{self.engine.current_player}")
+        print(f"Forced piece: {self.engine.forced_piece}")
+        print(f"Turn count: {self.turn_count}")
+        print()
 
-    print(" " + " ".join(str(c) for c in range(BOARD_SIZE)))
-    for r in range(BOARD_SIZE):
-      row_str = " ".join(piece_to_char[self.engine.board[r][c]] for c in range(BOARD_SIZE))
-      print(f"{r} {row_str}")
-    print(f"Current player: player_{self.engine.current_player}")
-    print(f"Forced piece: {self.engine.forced_piece}")
-    print(f"Turn count: {self.turn_count}")
-    print()
+    def close(self) -> None:
+        pass
 
-  def close(self) -> None:
-    pass
+    def _update_infos(self) -> None:
+        for agent in self.agents:
+            if self.agent_name_mapping[agent] == self.engine.current_player:
+                self.infos[agent]["legal_moves"] = [
+                    self.encode_move(m) for m in self.engine.get_all_legal_moves()
+                ]
+            else:
+                self.infos[agent]["legal_moves"] = []
 
-  def _update_infos(self) -> None:
-    for agent in self.agents:
-      if self.agent_name_mapping[agent] == self.engine.current_player:
-        self.infos[agent]["legal_moves"] = [
-            self.encode_move(m) for m in self.engine.get_all_legal_moves()
-        ]
-      else:
-        self.infos[agent]["legal_moves"] = []
+    def _get_action_mask(self, agent: str) -> np.ndarray:
+        '''
+        Build the binary action mask for one agent.
+        1 = legal action 
+        0 = illegal action
+        '''
+        mask = np.zeros(ACTION_SIZE, dtype= np.int8)
 
-  def _get_action_mask(self, agent: str) -> np.ndarray:
-    mask = np.zeros(ACTION_SIZE, dtype= np.int8)
+        if agent not in self.agents:
+            return mask
 
-    if agent not in self.agents:
-      return mask
+        if self.terminations.get(agent, False) or self.truncations.get(agent, False):
+            return mask
 
-    if self.terminations.get(agent, False) or self.truncations.get(agent, False):
-      return mask
+        player_idx = self.agent_name_mapping[agent]
+        if player_idx != self.engine.current_player:
+            return mask
 
-    player_idx = self.agent_name_mapping[agent]
-    if player_idx != self.engine.current_player:
-      return mask
+        for move in self.engine.get_all_legal_moves():
+            mask[self.encode_move(move)] = 1
 
-    for move in self.engine.get_all_legal_moves():
-      mask[self.encode_move(move)] = 1
+        return mask
 
-    return mask
+    @staticmethod
+    def pos_to_index(pos: Position) -> int:
+        r, c = pos
+        return r * BOARD_SIZE + c
 
-  @staticmethod
-  def pos_to_index(pos: Position) -> int:
-    r, c = pos
-    return r * BOARD_SIZE + c
+    @staticmethod
+    def index_to_pos(index: int) -> Position:
+        return divmod(index, BOARD_SIZE)
 
-  @staticmethod
-  def index_to_pos(index: int) -> Position:
-    return divmod(index, BOARD_SIZE)
+    @classmethod
+    def encode_move(cls, move: Move) -> int:
+        from_idx = cls.pos_to_index(move.start)
+        to_idx = cls.pos_to_index(move.end)
+        return from_idx * NUM_SQUARES + to_idx
 
-  @classmethod
-  def encode_move(cls, move: Move) -> int:
-    from_idx = cls.pos_to_index(move.start)
-    to_idx = cls.pos_to_index(move.end)
-    return from_idx * NUM_SQUARES + to_idx
-
-  @classmethod
-  def decode_action(cls, action: int) -> Tuple[Position, Position]:
-    from_idx = action // NUM_SQUARES
-    to_idx = action % NUM_SQUARES
-    return cls.index_to_pos(from_idx), cls.index_to_pos(to_idx)
+    @classmethod
+    def decode_action(cls, action: int) -> Tuple[Position, Position]:
+        from_idx = action // NUM_SQUARES
+        to_idx = action % NUM_SQUARES
+        return cls.index_to_pos(from_idx), cls.index_to_pos(to_idx)
 
 def env(render_mode: Optional[str] = None):
-  environment =  Checkers6x6AECEnv(render_mode=render_mode)
+    environment =  Checkers6x6AECEnv(render_mode=render_mode)
 
-  #  Wrappers to help prevent illegal actions, ensuring correct agent order
-  # Required for compatibility with RL libraries
-  environment = wrappers.CaptureStdoutWrapper(environment)
-  environment = wrappers.AssertOutOfBoundsWrapper(environment)
-  environment = wrappers.OrderEnforcingWrapper(environment)
+    #  Wrappers to help prevent illegal actions, ensuring correct agent order
+    # Required for compatibility with RL libraries
 
-  return environment
+    '''
+    Wrappers add:
+    - stdout capture 
+    - out-of-bounds checking 
+    - correct turn-order environment
+    '''
+    environment = wrappers.CaptureStdoutWrapper(environment)
+    environment = wrappers.AssertOutOfBoundsWrapper(environment)
+    environment = wrappers.OrderEnforcingWrapper(environment)
+
+    return environment
 
 #####################
 # TESTING for TASK 1 #

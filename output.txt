@@ -4,8 +4,8 @@
 0 . b . b . b
 1 b . b . b .
 2 . . . . . .
-3 r . . . . .
-4 . . . r . r
+3 . . r . . .
+4 . r . . . r
 5 r . r . r .
 Current player: player_1
 Forced piece: None
@@ -15,8 +15,8 @@ Turn count: 1
 0 . b . b . b
 1 . . b . b .
 2 . b . . . .
-3 r . . . . .
-4 . . . r . r
+3 . . r . . .
+4 . r . . . r
 5 r . r . r .
 Current player: player_0
 Forced piece: None
@@ -24,10 +24,10 @@ Turn count: 2
 
  0 1 2 3 4 5
 0 . b . b . b
-1 . . b . b .
-2 . b . . . .
-3 r . r . . .
-4 . . . . . r
+1 r . b . b .
+2 . . . . . .
+3 . . . . . .
+4 . r . . . r
 5 r . r . r .
 Current player: player_1
 Forced piece: None
@@ -35,10 +35,10 @@ Turn count: 3
 
  0 1 2 3 4 5
 0 . b . b . b
-1 . . b . b .
-2 . . . . . .
-3 r . . . . .
-4 . . . b . r
+1 r . . . b .
+2 . b . . . .
+3 . . . . . .
+4 . r . . . r
 5 r . r . r .
 Current player: player_0
 Forced piece: None
@@ -46,319 +46,542 @@ Turn count: 4
 
  0 1 2 3 4 5
 0 . b . b . b
-1 . . b . b .
-2 . . . . . .
-3 r . r . . .
+1 r . . . b .
+2 . b . . . .
+3 r . . . . .
 4 . . . . . r
-5 r . r . . .
+5 r . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 5
 
  0 1 2 3 4 5
-0 . b . b . b
-1 . . . . b .
+0 . b . . . b
+1 r . b . b .
 2 . b . . . .
-3 r . r . . .
+3 r . . . . .
 4 . . . . . r
-5 r . r . . .
+5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 6
 
  0 1 2 3 4 5
-0 . b . b . b
-1 r . . . b .
-2 . . . . . .
+0 . b . . . b
+1 r . b . b .
+2 . b . . . .
 3 r . . . . .
-4 . . . . . r
+4 . . . r . r
 5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 7
 
  0 1 2 3 4 5
-0 . b . b . b
-1 r . . . . .
-2 . . . b . .
-3 r . . . . .
-4 . . . . . r
+0 . b . . . b
+1 r . b . b .
+2 . . . . . .
+3 r . b . . .
+4 . . . r . r
 5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 8
 
  0 1 2 3 4 5
-0 . b . b . b
-1 r . . . . .
-2 . . . b . .
+0 . b . . . b
+1 r . b . b .
+2 . r . . . .
 3 r . . . . .
-4 . r . . . r
-5 r . . . . .
-Current player: player_1
-Forced piece: None
+4 . . . . . r
+5 r . r . . .
+Current player: player_0
+Forced piece: (2, 1)
 Turn count: 9
 
  0 1 2 3 4 5
-0 . b . . . b
+0 . b . R . b
 1 r . . . b .
-2 . . . b . .
+2 . . . . . .
 3 r . . . . .
-4 . r . . . r
-5 r . . . . .
+4 . . . . . r
+5 r . r . . .
 Current player: player_0
-Forced piece: None
+Forced piece: (0, 3)
 Turn count: 10
 
  0 1 2 3 4 5
 0 . b . . . b
-1 r . . . b .
-2 . . . b . .
-3 r . . . r .
-4 . r . . . .
-5 r . . . . .
+1 r . . . . .
+2 . . . . . R
+3 r . . . . .
+4 . . . . . r
+5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 11
 
  0 1 2 3 4 5
-0 . b . . . b
-1 r . . . b .
-2 . . . . . .
+0 . . . . . b
+1 r . b . . .
+2 . . . . . R
 3 r . . . . .
-4 . r . . . b
-5 r . . . . .
+4 . . . . . r
+5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 12
 
  0 1 2 3 4 5
-0 . b . . . b
-1 r . . . b .
-2 . . . . . .
-3 r . r . . .
-4 . . . . . b
-5 r . . . . .
+0 . . . . . b
+1 r . b . . .
+2 . r . . . R
+3 . . . . . .
+4 . . . . . r
+5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 13
 
  0 1 2 3 4 5
-0 . b . . . b
+0 . . . . . b
 1 r . . . . .
-2 . . . b . .
-3 r . r . . .
-4 . . . . . b
-5 r . . . . .
+2 . . . . . R
+3 b . . . . .
+4 . . . . . r
+5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 14
 
  0 1 2 3 4 5
-0 . b . . . b
-1 r . . . r .
+0 . . . . . b
+1 r . . . R .
 2 . . . . . .
-3 r . . . . .
-4 . . . . . b
-5 r . . . . .
+3 b . . . . .
+4 . . . . . r
+5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 15
-
- 0 1 2 3 4 5
-0 . b . . . .
-1 r . . . . .
-2 . . . b . .
-3 r . . . . .
-4 . . . . . b
-5 r . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 16
-
- 0 1 2 3 4 5
-0 . b . . . .
-1 r . . . . .
-2 . . . b . .
-3 r . . . . .
-4 . r . . . b
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 17
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 r . b . . .
-2 . . . b . .
-3 r . . . . .
-4 . r . . . b
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 18
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 r . b . . .
-2 . r . b . .
-3 . . . . . .
-4 . r . . . b
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 19
 
  0 1 2 3 4 5
 0 . . . . . .
 1 r . . . . .
 2 . . . b . .
 3 b . . . . .
-4 . r . . . b
-5 . . . . . .
+4 . . . . . r
+5 r . r . . .
+Current player: player_0
+Forced piece: None
+Turn count: 16
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 r . . . . .
+2 . . . b . .
+3 b . . . . .
+4 . . . r . r
+5 r . . . . .
 Current player: player_1
-Forced piece: (3, 0)
-Turn count: 20
+Forced piece: None
+Turn count: 17
 
  0 1 2 3 4 5
 0 . . . . . .
 1 r . . . . .
 2 . . . b . .
 3 . . . . . .
-4 . . . . . b
-5 . . B . . .
+4 . b . r . r
+5 r . . . . .
 Current player: player_0
+Forced piece: None
+Turn count: 18
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 r . . . . .
+2 . . . b . .
+3 . . r . . .
+4 . . . r . r
+5 . . . . . .
+Current player: player_0
+Forced piece: (3, 2)
+Turn count: 19
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 r . . . r .
+2 . . . . . .
+3 . . . . . .
+4 . . . r . r
+5 . . . . . .
+Current player: player_0
+Forced piece: (3, 2)
+Turn count: 20
+
+Episode 1: winner = player_0, turns = 20
+
+=== Episode 2 ===
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . b . b .
+2 . . . . . .
+3 . . r . . .
+4 . r . . . r
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 1
+
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . b . . .
+2 . . . b . .
+3 . . r . . .
+4 . r . . . r
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 2
+
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . b . r .
+2 . . . . . .
+3 . . . . . .
+4 . r . . . r
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 3
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . b . . .
+2 . . . . . b
+3 . . . . . .
+4 . r . . . r
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 4
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . b . . .
+2 . . . . . b
+3 . . . . . .
+4 . r . r . r
+5 r . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 5
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . . .
+2 . b . . . b
+3 . . . . . .
+4 . r . r . r
+5 r . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 6
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . . .
+2 . b . . . b
+3 . . r . . .
+4 . . . r . r
+5 r . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 7
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . . .
+2 . b . . . .
+3 . . r . b .
+4 . . . r . r
+5 r . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 8
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . . .
+2 . b . r . .
+3 . . r . . .
+4 . . . r . .
+5 r . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 9
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . . .
+2 . . . r . .
+3 b . r . . .
+4 . . . r . .
+5 r . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 10
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . . .
+2 . . . r . .
+3 b . r . r .
+4 . . . . . .
+5 r . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 11
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 . . . . . .
+2 . b . r . .
+3 b . r . r .
+4 . . . . . .
+5 r . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 12
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 r . . . . .
+2 . . . r . .
+3 b . . . r .
+4 . . . . . .
+5 r . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 13
+
+ 0 1 2 3 4 5
+0 . b . . . .
+1 r . . . b .
+2 . . . r . .
+3 b . . . r .
+4 . . . . . .
+5 r . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 14
+
+ 0 1 2 3 4 5
+0 . b . . . R
+1 r . . . . .
+2 . . . . . .
+3 b . . . r .
+4 . . . . . .
+5 r . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 15
+
+ 0 1 2 3 4 5
+0 . b . . . R
+1 r . . . . .
+2 . . . . . .
+3 . . . . r .
+4 . b . . . .
+5 r . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 16
+
+ 0 1 2 3 4 5
+0 . b . . . R
+1 r . . . . .
+2 . . . . . .
+3 . . r . r .
+4 . . . . . .
+5 . . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 17
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 r . b . . .
+2 . . . . . .
+3 . . r . r .
+4 . . . . . .
+5 . . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 18
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 r . b . . .
+2 . . . . . .
+3 . . r . r .
+4 . . . . . r
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 19
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 r . . . . .
+2 . b . . . .
+3 . . r . r .
+4 . . . . . r
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 20
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 r . . . R .
+2 . b . . . .
+3 . . r . r .
+4 . . . . . r
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 21
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . b . .
-3 . . . . . .
-4 . . . . . b
-5 . . B . . .
-Current player: player_1
+0 . . . . . .
+1 r . . . R .
+2 . . . . . .
+3 . . . . r .
+4 . . . b . r
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 22
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . b . .
-3 . . . . . .
-4 . . . . . .
-5 . . B . B .
-Current player: player_0
+0 . . . . . .
+1 r . . . . .
+2 . . . . . R
+3 . . . . r .
+4 . . . b . r
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 23
 
  0 1 2 3 4 5
 0 . . . . . .
-1 R . . . . .
-2 . . . b . .
-3 . . . . . .
-4 . . . . . .
-5 . . B . B .
-Current player: player_1
+1 r . . . . .
+2 . . . . . R
+3 . . . . r .
+4 . . . . . r
+5 . . . . B .
+Current player: player_0
 Forced piece: None
 Turn count: 24
 
  0 1 2 3 4 5
 0 . . . . . .
-1 R . . . . .
+1 r . . . R .
 2 . . . . . .
-3 . . . . b .
-4 . . . . . .
-5 . . B . B .
-Current player: player_0
+3 . . . . r .
+4 . . . . . r
+5 . . . . B .
+Current player: player_1
 Forced piece: None
 Turn count: 25
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
+0 . . . . . .
+1 r . . . R .
 2 . . . . . .
-3 . . . . b .
-4 . . . . . .
-5 . . B . B .
-Current player: player_1
+3 . . . . r .
+4 . . . B . r
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 26
 
  0 1 2 3 4 5
 0 . R . . . .
-1 . . . . . .
+1 . . . . R .
 2 . . . . . .
-3 . . . . b .
-4 . B . . . .
-5 . . . . B .
-Current player: player_0
+3 . . . . r .
+4 . . . B . r
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 27
 
  0 1 2 3 4 5
-0 . . . . . .
-1 R . . . . .
-2 . . . . . .
-3 . . . . b .
-4 . B . . . .
-5 . . . . B .
+0 . R . . . .
+1 . . . . R .
+2 . . . . . B
+3 . . . . . .
+4 . . . . . r
+5 . . . . . .
 Current player: player_1
-Forced piece: None
+Forced piece: (2, 5)
 Turn count: 28
 
  0 1 2 3 4 5
-0 . . . . . .
-1 R . . . . .
+0 . R . B . .
+1 . . . . . .
 2 . . . . . .
-3 . . . . b .
-4 . . . . . .
-5 . . B . B .
+3 . . . . . .
+4 . . . . . r
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 29
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
+0 . . . B . .
+1 R . . . . .
 2 . . . . . .
-3 . . . . b .
-4 . . . . . .
-5 . . B . B .
+3 . . . . . .
+4 . . . . . r
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 30
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
+0 . . . . . .
+1 R . B . . .
 2 . . . . . .
-3 . . . . b .
-4 . . . B . .
-5 . . . . B .
+3 . . . . . .
+4 . . . . . r
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 31
 
  0 1 2 3 4 5
 0 . . . . . .
-1 R . . . . .
-2 . . . . . .
-3 . . . . b .
-4 . . . B . .
-5 . . . . B .
+1 . . B . . .
+2 . R . . . .
+3 . . . . . .
+4 . . . . . r
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 32
 
  0 1 2 3 4 5
 0 . . . . . .
-1 R . . . . .
+1 . . . . . .
 2 . . . . . .
-3 . . . . . .
-4 . . . B . b
-5 . . . . B .
+3 B . . . . .
+4 . . . . . r
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 33
@@ -366,10 +589,10 @@ Turn count: 33
  0 1 2 3 4 5
 0 . . . . . .
 1 . . . . . .
-2 . R . . . .
-3 . . . . . .
-4 . . . B . b
-5 . . . . B .
+2 . . . . . .
+3 B . . . r .
+4 . . . . . .
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 34
@@ -377,10 +600,10 @@ Turn count: 34
  0 1 2 3 4 5
 0 . . . . . .
 1 . . . . . .
-2 . R . . . .
-3 . . B . . .
-4 . . . . . b
-5 . . . . B .
+2 . B . . . .
+3 . . . . r .
+4 . . . . . .
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 35
@@ -388,260 +611,81 @@ Turn count: 35
  0 1 2 3 4 5
 0 . . . . . .
 1 . . . . . .
-2 . . . . . .
+2 . B . . . r
 3 . . . . . .
-4 . . . R . b
-5 . . . . B .
+4 . . . . . .
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 36
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . . . . .
-2 . . . . . .
-3 . . B . . .
-4 . . . . . b
+1 . . B . . .
+2 . . . . . r
+3 . . . . . .
+4 . . . . . .
 5 . . . . . .
-Current player: player_1
+Current player: player_0
 Forced piece: None
 Turn count: 37
 
-Episode 1: winner = player_1, turns = 37
-
-=== Episode 2 ===
  0 1 2 3 4 5
-0 . b . b . b
-1 b . b . b .
+0 . . . . . .
+1 . . B . r .
 2 . . . . . .
-3 r . . . . .
-4 . . . r . r
-5 r . r . r .
-Current player: player_1
-Forced piece: None
-Turn count: 1
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 . . b . b .
-2 . b . . . .
-3 r . . . . .
-4 . . . r . r
-5 r . r . r .
-Current player: player_0
-Forced piece: None
-Turn count: 2
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 . . b . b .
-2 . b . . . .
-3 r . . . . .
-4 . r . r . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 3
-
- 0 1 2 3 4 5
-0 . . . b . b
-1 b . b . b .
-2 . b . . . .
-3 r . . . . .
-4 . r . r . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 4
-
- 0 1 2 3 4 5
-0 . . . b . b
-1 b . b . b .
-2 . b . . . .
-3 r . . . r .
-4 . r . . . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 5
-
- 0 1 2 3 4 5
-0 . . . b . b
-1 b . . . b .
-2 . b . b . .
-3 r . . . r .
-4 . r . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 6
-
- 0 1 2 3 4 5
-0 . . . b . b
-1 b . r . b .
-2 . . . b . .
-3 . . . . r .
-4 . r . . . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 7
-
- 0 1 2 3 4 5
-0 . . . . . b
-1 b . . . b .
-2 . b . b . .
-3 . . . . r .
-4 . r . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 8
-
- 0 1 2 3 4 5
-0 . . . . . b
-1 b . r . b .
-2 . b . . . .
 3 . . . . . .
-4 . r . . . r
-5 r . . . r .
+4 . . . . . .
+5 . . . . . .
 Current player: player_1
 Forced piece: None
-Turn count: 9
+Turn count: 38
 
  0 1 2 3 4 5
-0 . . . . . b
-1 b . r . . .
-2 . b . b . .
+0 . B . . . .
+1 . . . . r .
+2 . . . . . .
 3 . . . . . .
-4 . r . . . r
-5 r . . . r .
+4 . . . . . .
+5 . . . . . .
 Current player: player_0
 Forced piece: None
-Turn count: 10
+Turn count: 39
 
  0 1 2 3 4 5
-0 . . . . . b
-1 b . r . . .
-2 . b . b . .
-3 r . . . . .
-4 . . . . . r
-5 r . . . r .
+0 . B . R . .
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . .
+5 . . . . . .
 Current player: player_1
 Forced piece: None
-Turn count: 11
+Turn count: 40
 
  0 1 2 3 4 5
-0 . . . . . b
-1 b . r . . .
-2 . b . . . .
-3 r . . . b .
-4 . . . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 12
-
- 0 1 2 3 4 5
-0 . . . . . b
-1 b . r . . .
-2 . b . r . .
-3 r . . . . .
-4 . . . . . .
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 13
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . r . b .
-2 . b . r . .
-3 r . . . . .
-4 . . . . . .
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 14
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . r . . .
-2 . b . . . .
-3 r . . . . .
-4 . . . . . .
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 15
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . r . . .
+0 . . . R . .
+1 . . B . . .
 2 . . . . . .
-3 r . b . . .
+3 . . . . . .
 4 . . . . . .
-5 r . . . r .
+5 . . . . . .
 Current player: player_0
 Forced piece: None
-Turn count: 16
+Turn count: 41
 
  0 1 2 3 4 5
 0 . . . . . .
-1 b . r . R .
-2 . . . . . .
-3 r . b . . .
+1 . . . . . .
+2 . R . . . .
+3 . . . . . .
 4 . . . . . .
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 17
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . r . R .
-2 . . . . . .
-3 r . . . . .
-4 . . . b . .
-5 r . . . r .
+5 . . . . . .
 Current player: player_0
 Forced piece: None
-Turn count: 18
+Turn count: 42
 
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . r . R .
-2 . . . . . .
-3 r . r . . .
-4 . . . . . .
-5 r . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 19
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . r . R .
-2 . b . . . .
-3 r . r . . .
-4 . . . . . .
-5 r . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 20
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 r . r . R .
-2 . . . . . .
-3 r . . . . .
-4 . . . . . .
-5 r . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 21
-
-Episode 2: winner = player_0, turns = 21
+Episode 2: winner = player_0, turns = 42
 
 === Episode 3 ===
  0 1 2 3 4 5
@@ -657,8 +701,8 @@ Turn count: 1
 
  0 1 2 3 4 5
 0 . b . b . b
-1 b . b . . .
-2 . . . . . b
+1 b . . . b .
+2 . . . b . .
 3 . . r . . .
 4 . r . . . r
 5 r . r . r .
@@ -668,8 +712,8 @@ Turn count: 2
 
  0 1 2 3 4 5
 0 . b . b . b
-1 b . b . . .
-2 . . . . . b
+1 b . . . b .
+2 . . . b . .
 3 . . r . . .
 4 . r . r . r
 5 r . . . r .
@@ -680,7 +724,7 @@ Turn count: 3
  0 1 2 3 4 5
 0 . b . . . b
 1 b . b . b .
-2 . . . . . b
+2 . . . b . .
 3 . . r . . .
 4 . r . r . r
 5 r . . . r .
@@ -691,7 +735,7 @@ Turn count: 4
  0 1 2 3 4 5
 0 . b . . . b
 1 b . b . b .
-2 . . . . . b
+2 . . . b . .
 3 . . r . r .
 4 . r . . . r
 5 r . . . r .
@@ -701,10 +745,10 @@ Turn count: 5
 
  0 1 2 3 4 5
 0 . b . . . b
-1 b . b . b .
-2 . . . . . .
-3 . . r . . .
-4 . r . b . r
+1 . . b . b .
+2 . b . b . .
+3 . . r . r .
+4 . r . . . r
 5 r . . . r .
 Current player: player_0
 Forced piece: None
@@ -712,10 +756,10 @@ Turn count: 6
 
  0 1 2 3 4 5
 0 . b . . . b
-1 b . b . b .
-2 . r . . . .
-3 . . . . . .
-4 . r . b . r
+1 r . b . b .
+2 . . . b . .
+3 . . . . r .
+4 . r . . . r
 5 r . . . r .
 Current player: player_1
 Forced piece: None
@@ -723,474 +767,518 @@ Turn count: 7
 
  0 1 2 3 4 5
 0 . b . . . b
-1 b . . . b .
-2 . . . . . .
-3 b . . . . .
-4 . r . b . r
+1 r . . . b .
+2 . b . b . .
+3 . . . . r .
+4 . r . . . r
 5 r . . . r .
-Current player: player_1
-Forced piece: (3, 0)
+Current player: player_0
+Forced piece: None
 Turn count: 8
 
  0 1 2 3 4 5
 0 . b . . . b
-1 b . . . b .
-2 . . . . . .
+1 r . r . b .
+2 . b . . . .
 3 . . . . . .
-4 . . . b . r
-5 r . B . r .
-Current player: player_0
+4 . r . . . r
+5 r . . . r .
+Current player: player_1
 Forced piece: None
 Turn count: 9
 
  0 1 2 3 4 5
-0 . b . . . b
-1 b . . . b .
-2 . . . . . .
-3 . . r . . .
-4 . . . . . r
-5 r . B . . .
-Current player: player_1
+0 . . . . . b
+1 r . . . b .
+2 . b . b . .
+3 . . . . . .
+4 . r . . . r
+5 r . . . r .
+Current player: player_0
 Forced piece: None
 Turn count: 10
 
  0 1 2 3 4 5
-0 . b . . . b
-1 b . . . b .
-2 . . . . . .
+0 . . . . . b
+1 r . . . b .
+2 . b . b . .
 3 . . r . . .
-4 . B . . . r
-5 r . . . . .
-Current player: player_0
+4 . . . . . r
+5 r . . . r .
+Current player: player_1
 Forced piece: None
 Turn count: 11
 
  0 1 2 3 4 5
-0 . b . . . b
-1 b . . . b .
-2 . r . . . .
+0 . . . . . b
+1 r . . . b .
+2 . . . b . .
 3 . . . . . .
-4 . B . . . r
-5 r . . . . .
-Current player: player_1
+4 . . . b . r
+5 r . . . r .
+Current player: player_0
 Forced piece: None
 Turn count: 12
 
  0 1 2 3 4 5
-0 . b . . . b
-1 . . . . b .
-2 . . . . . .
-3 . . b . . .
-4 . B . . . r
+0 . . . . . b
+1 r . . . b .
+2 . . . b . .
+3 . . r . . .
+4 . . . . . r
 5 r . . . . .
-Current player: player_0
+Current player: player_1
 Forced piece: None
 Turn count: 13
 
  0 1 2 3 4 5
-0 . b . . . b
-1 . . . . b .
+0 . . . . . b
+1 r . . . b .
 2 . . . . . .
-3 . . b . r .
-4 . B . . . .
+3 . . . . . .
+4 . b . . . r
 5 r . . . . .
-Current player: player_1
+Current player: player_0
 Forced piece: None
 Turn count: 14
 
  0 1 2 3 4 5
-0 . b . . . b
-1 . . . . b .
+0 . . . . . b
+1 r . . . b .
 2 . . . . . .
-3 B . b . r .
-4 . . . . . .
-5 r . . . . .
-Current player: player_0
+3 . . r . . .
+4 . . . . . r
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 15
 
  0 1 2 3 4 5
-0 . b . . . b
-1 . . . . b .
-2 . . . . . .
-3 B . b . r .
-4 . r . . . .
+0 . . . . . b
+1 r . . . . .
+2 . . . . . b
+3 . . r . . .
+4 . . . . . r
 5 . . . . . .
-Current player: player_1
+Current player: player_0
 Forced piece: None
 Turn count: 16
 
  0 1 2 3 4 5
-0 . b . . . b
-1 . . . . b .
-2 . . . . . .
-3 B . . . r .
-4 . . . . . .
-5 B . . . . .
-Current player: player_0
+0 . . . . . b
+1 r . . . . .
+2 . . . r . b
+3 . . . . . .
+4 . . . . . r
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 17
 
  0 1 2 3 4 5
-0 . b . . . b
-1 . . . . b .
-2 . . . . . r
-3 B . . . . .
-4 . . . . . .
-5 B . . . . .
-Current player: player_1
+0 . . . . . b
+1 r . . . . .
+2 . . . r . .
+3 . . . . b .
+4 . . . . . r
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 18
 
  0 1 2 3 4 5
-0 . . . . . b
-1 b . . . b .
-2 . . . . . r
-3 B . . . . .
-4 . . . . . .
-5 B . . . . .
-Current player: player_0
+0 . R . . . b
+1 . . . . . .
+2 . . . r . .
+3 . . . . b .
+4 . . . . . r
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 19
 
  0 1 2 3 4 5
-0 . . . R . b
-1 b . . . . .
-2 . . . . . .
-3 B . . . . .
-4 . . . . . .
-5 B . . . . .
-Current player: player_1
+0 . R . . . .
+1 . . . . b .
+2 . . . r . .
+3 . . . . b .
+4 . . . . . r
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 20
 
  0 1 2 3 4 5
-0 . . . R . b
-1 b . . . . .
+0 . R . . . R
+1 . . . . . .
 2 . . . . . .
-3 B . . . . .
-4 . B . . . .
+3 . . . . b .
+4 . . . . . r
 5 . . . . . .
-Current player: player_0
+Current player: player_1
 Forced piece: None
 Turn count: 21
 
  0 1 2 3 4 5
-0 . . . . . b
-1 b . R . . .
+0 . R . . . R
+1 . . . . . .
 2 . . . . . .
-3 B . . . . .
-4 . B . . . .
+3 . . . . . .
+4 . . . b . r
 5 . . . . . .
-Current player: player_1
+Current player: player_0
 Forced piece: None
 Turn count: 22
 
  0 1 2 3 4 5
-0 . . . . . b
-1 b . R . . .
+0 . R . . . R
+1 . . . . . .
 2 . . . . . .
-3 B . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_0
+3 . . . . r .
+4 . . . b . .
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 23
 
  0 1 2 3 4 5
-0 . . . R . b
-1 b . . . . .
+0 . R . . . R
+1 . . . . . .
 2 . . . . . .
-3 B . . . . .
+3 . . . . r .
 4 . . . . . .
-5 . . B . . .
-Current player: player_1
+5 . . . . B .
+Current player: player_0
 Forced piece: None
 Turn count: 24
 
  0 1 2 3 4 5
-0 . . . R . .
-1 b . . . b .
-2 . . . . . .
-3 B . . . . .
+0 . R . . . R
+1 . . . . . .
+2 . . . r . .
+3 . . . . . .
 4 . . . . . .
-5 . . B . . .
-Current player: player_0
+5 . . . . B .
+Current player: player_1
 Forced piece: None
 Turn count: 25
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . . . R
-3 B . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_1
+0 . R . . . R
+1 . . . . . .
+2 . . . r . .
+3 . . . . . .
+4 . . . B . .
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 26
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . R
-3 B . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_0
+0 . R . . . .
+1 . . . . R .
+2 . . . r . .
+3 . . . . . .
+4 . . . B . .
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 27
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . R .
+0 . R . . . .
+1 . . . . R .
+2 . . . r . .
+3 . . B . . .
 4 . . . . . .
-5 . . B . . .
-Current player: player_1
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 28
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . R .
-4 . B . . . .
+0 . R . . . .
+1 . . r . R .
+2 . . . . . .
+3 . . B . . .
+4 . . . . . .
 5 . . . . . .
-Current player: player_0
+Current player: player_1
 Forced piece: None
 Turn count: 29
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . . .
-4 . B . R . .
+0 . R . . . .
+1 . . r . R .
+2 . . . . . .
+3 . . . . . .
+4 . . . B . .
 5 . . . . . .
-Current player: player_1
+Current player: player_0
 Forced piece: None
 Turn count: 30
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . . .
-4 . . . R . .
-5 . . B . . .
-Current player: player_0
+0 . R . R . .
+1 . . r . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . B . .
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 31
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . . .
+0 . R . R . .
+1 . . r . . .
+2 . . . . . .
+3 . . . . B .
 4 . . . . . .
-5 . . B . R .
-Current player: player_1
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 32
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . . .
-4 . B . . . .
-5 . . . . R .
-Current player: player_0
+0 . R . . . .
+1 . . r . R .
+2 . . . . . .
+3 . . . . B .
+4 . . . . . .
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 33
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . . .
-4 . B . R . .
+0 . R . . . .
+1 . . r . R .
+2 . . . . . B
+3 . . . . . .
+4 . . . . . .
 5 . . . . . .
-Current player: player_1
+Current player: player_0
 Forced piece: None
 Turn count: 34
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . . .
-4 . . . R . .
-5 . . B . . .
-Current player: player_0
+0 . R . R . .
+1 . . . . R .
+2 . . . . . B
+3 . . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 35
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 B . . . R .
+0 . R . R . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . B .
 4 . . . . . .
-5 . . B . . .
-Current player: player_1
+5 . . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 36
 
  0 1 2 3 4 5
-0 . . . . . .
+0 . R . R . R
 1 . . . . . .
-2 . b . . . .
-3 B . . . R .
-4 . B . . . .
+2 . . . . . .
+3 . . . . B .
+4 . . . . . .
 5 . . . . . .
-Current player: player_0
+Current player: player_1
 Forced piece: None
 Turn count: 37
 
  0 1 2 3 4 5
-0 . . . . . .
+0 . R . R . R
 1 . . . . . .
-2 . b . . . R
-3 B . . . . .
-4 . B . . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . B
 5 . . . . . .
-Current player: player_1
+Current player: player_0
 Forced piece: None
 Turn count: 38
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . R
-3 B . B . . .
-4 . . . . . .
+0 . R . R . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . B
 5 . . . . . .
-Current player: player_0
+Current player: player_1
 Forced piece: None
 Turn count: 39
 
  0 1 2 3 4 5
-0 . . . . . .
+0 . R . R . .
 1 . . . . R .
-2 . b . . . .
-3 B . B . . .
+2 . . . . . .
+3 . . . . . .
 4 . . . . . .
-5 . . . . . .
-Current player: player_1
+5 . . . . B .
+Current player: player_0
 Forced piece: None
 Turn count: 40
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . b . B . .
-3 B . . . . .
+0 . R . R . R
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
 4 . . . . . .
-5 . . . . . .
-Current player: player_0
+5 . . . . B .
+Current player: player_1
 Forced piece: None
 Turn count: 41
 
  0 1 2 3 4 5
-0 . . . . . .
+0 . R . R . R
 1 . . . . . .
-2 . b . . . .
-3 B . R . . .
-4 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . B
 5 . . . . . .
 Current player: player_0
-Forced piece: (3, 2)
+Forced piece: None
 Turn count: 42
 
  0 1 2 3 4 5
-0 . . . . . .
-1 R . . . . .
+0 . . . R . R
+1 . . R . . .
 2 . . . . . .
-3 B . . . . .
-4 . . . . . .
+3 . . . . . .
+4 . . . . . B
 5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 43
 
  0 1 2 3 4 5
-0 . . . . . .
-1 R . . . . .
+0 . . . R . R
+1 . . R . . .
 2 . . . . . .
 3 . . . . . .
-4 . B . . . .
-5 . . . . . .
+4 . . . . . .
+5 . . . . B .
 Current player: player_0
 Forced piece: None
 Turn count: 44
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . R . . . .
+0 . . . R . .
+1 . . R . R .
+2 . . . . . .
 3 . . . . . .
-4 . B . . . .
-5 . . . . . .
+4 . . . . . .
+5 . . . . B .
 Current player: player_1
 Forced piece: None
 Turn count: 45
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . R . . . .
+0 . . . R . .
+1 . . R . R .
+2 . . . . . .
 3 . . . . . .
-4 . . . . . .
-5 . . B . . .
+4 . . . . . B
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 46
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . .
-3 R . . . . .
-4 . . . . . .
-5 . . B . . .
+0 . . . R . .
+1 . . . . R .
+2 . . . R . .
+3 . . . . . .
+4 . . . . . B
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 47
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . .
-3 R . . . . .
-4 . B . . . .
-5 . . . . . .
+0 . . . R . .
+1 . . . . R .
+2 . . . R . .
+3 . . . . . .
+4 . . . . . .
+5 . . . . B .
 Current player: player_0
 Forced piece: None
 Turn count: 48
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . . . . .
-2 . . . . . .
+1 . . R . R .
+2 . . . R . .
 3 . . . . . .
 4 . . . . . .
-5 . . R . . .
-Current player: player_0
+5 . . . . B .
+Current player: player_1
 Forced piece: None
 Turn count: 49
 
-Episode 3: winner = player_0, turns = 49
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . R . R .
+2 . . . R . .
+3 . . . . . .
+4 . . . . . B
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 50
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . R . R . .
+3 . . . . . .
+4 . . . . . B
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 51
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . R . R . .
+3 . . . . B .
+4 . . . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 52
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . R . . . .
+3 . . . . . .
+4 . . . . . R
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 53
+
+Episode 3: winner = player_0, turns = 53
 
 === Episode 4 ===
  0 1 2 3 4 5
 0 . b . b . b
 1 b . b . b .
 2 . . . . . .
-3 . . r . . .
+3 r . . . . .
 4 . . . r . r
 5 r . r . r .
 Current player: player_1
@@ -1199,9 +1287,9 @@ Turn count: 1
 
  0 1 2 3 4 5
 0 . b . b . b
-1 b . b . . .
-2 . . . . . b
-3 . . r . . .
+1 b . . . b .
+2 . . . b . .
+3 r . . . . .
 4 . . . r . r
 5 r . r . r .
 Current player: player_0
@@ -1210,8 +1298,8 @@ Turn count: 2
 
  0 1 2 3 4 5
 0 . b . b . b
-1 b . b . . .
-2 . r . . . b
+1 b . . . b .
+2 . r . b . .
 3 . . . . . .
 4 . . . r . r
 5 r . r . r .
@@ -1221,8 +1309,8 @@ Turn count: 3
 
  0 1 2 3 4 5
 0 . b . b . b
-1 . . b . . .
-2 . . . . . b
+1 . . . . b .
+2 . . . b . .
 3 . . b . . .
 4 . . . r . r
 5 r . r . r .
@@ -1232,8 +1320,8 @@ Turn count: 4
 
  0 1 2 3 4 5
 0 . b . b . b
-1 . . b . . .
-2 . r . . . b
+1 . . . . b .
+2 . r . b . .
 3 . . . . . .
 4 . . . . . r
 5 r . r . r .
@@ -1242,10 +1330,10 @@ Forced piece: None
 Turn count: 5
 
  0 1 2 3 4 5
-0 . b . b . b
-1 . . . . . .
-2 . . . . . b
-3 b . . . . .
+0 . . . b . b
+1 . . b . b .
+2 . r . b . .
+3 . . . . . .
 4 . . . . . r
 5 r . r . r .
 Current player: player_0
@@ -1253,479 +1341,105 @@ Forced piece: None
 Turn count: 6
 
  0 1 2 3 4 5
-0 . b . b . b
-1 . . . . . .
-2 . . . . . b
-3 b . . . . .
-4 . . . r . r
-5 r . r . . .
+0 . . . b . b
+1 . . b . b .
+2 . r . b . .
+3 . . . . r .
+4 . . . . . .
+5 r . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 7
 
  0 1 2 3 4 5
 0 . . . b . b
-1 b . . . . .
-2 . . . . . b
-3 b . . . . .
-4 . . . r . r
-5 r . r . . .
+1 . . b . b .
+2 . r . . . .
+3 . . . . . .
+4 . . . . . b
+5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 8
 
  0 1 2 3 4 5
 0 . . . b . b
-1 b . . . . .
-2 . . . . . b
-3 b . . . . .
-4 . r . r . r
-5 . . r . . .
+1 . . b . b .
+2 . r . . . .
+3 . . . . . .
+4 . r . . . b
+5 . . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 9
 
  0 1 2 3 4 5
 0 . . . b . b
-1 b . . . . .
+1 . . . . b .
 2 . . . . . .
-3 b . . . b .
-4 . r . r . r
-5 . . r . . .
+3 b . . . . .
+4 . r . . . b
+5 . . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 10
 
  0 1 2 3 4 5
 0 . . . b . b
-1 b . . . . .
-2 . . . r . .
+1 . . . . b .
+2 . . . . . .
 3 b . . . . .
-4 . r . r . .
-5 . . r . . .
+4 . r . r . b
+5 . . . . r .
 Current player: player_1
 Forced piece: None
 Turn count: 11
 
  0 1 2 3 4 5
-0 . . . b . .
-1 b . . . b .
-2 . . . r . .
-3 b . . . . .
-4 . r . r . .
-5 . . r . . .
-Current player: player_0
-Forced piece: None
+0 . . . b . b
+1 . . . . b .
+2 . . . . . .
+3 . . . . . .
+4 . . . r . b
+5 . . B . r .
+Current player: player_1
+Forced piece: (5, 2)
 Turn count: 12
 
  0 1 2 3 4 5
-0 . . . b . R
-1 b . . . . .
+0 . . . b . b
+1 . . . . b .
 2 . . . . . .
-3 b . . . . .
-4 . r . r . .
-5 . . r . . .
-Current player: player_1
+3 . . . . B .
+4 . . . . . b
+5 . . . . r .
+Current player: player_0
 Forced piece: None
 Turn count: 13
 
  0 1 2 3 4 5
-0 . . . b . R
-1 . . . . . .
-2 . b . . . .
-3 b . . . . .
-4 . r . r . .
-5 . . r . . .
-Current player: player_0
+0 . . . b . b
+1 . . . . b .
+2 . . . . . .
+3 . . . . B .
+4 . . . r . b
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 14
 
  0 1 2 3 4 5
-0 . . . b . R
-1 . . . . . .
-2 . b . . . .
-3 b . . . r .
-4 . r . . . .
-5 . . r . . .
+0 . . . b . b
+1 . . . . b .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . b
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 15
 
- 0 1 2 3 4 5
-0 . . . . . R
-1 . . . . b .
-2 . b . . . .
-3 b . . . r .
-4 . r . . . .
-5 . . r . . .
-Current player: player_0
-Forced piece: None
-Turn count: 16
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . R . .
-3 b . . . r .
-4 . r . . . .
-5 . . r . . .
-Current player: player_1
-Forced piece: None
-Turn count: 17
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . R . .
-3 b . b . r .
-4 . r . . . .
-5 . . r . . .
-Current player: player_0
-Forced piece: None
-Turn count: 18
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . R . r
-3 b . b . . .
-4 . r . . . .
-5 . . r . . .
-Current player: player_1
-Forced piece: None
-Turn count: 19
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . R . r
-3 b . . . . .
-4 . . . . . .
-5 B . r . . .
-Current player: player_0
-Forced piece: None
-Turn count: 20
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . R . . .
-2 . . . . . r
-3 b . . . . .
-4 . . . . . .
-5 B . r . . .
-Current player: player_1
-Forced piece: None
-Turn count: 21
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . R . . .
-2 . . . . . r
-3 b . . . . .
-4 . B . . . .
-5 . . r . . .
-Current player: player_0
-Forced piece: None
-Turn count: 22
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . . . r
-3 b . . . . .
-4 . B . . . .
-5 . . r . . .
-Current player: player_1
-Forced piece: None
-Turn count: 23
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . . . r
-3 b . . . . .
-4 . . . . . .
-5 B . r . . .
-Current player: player_0
-Forced piece: None
-Turn count: 24
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . . . r
-3 b . . . . .
-4 . r . . . .
-5 B . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 25
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . . . r
-3 b . B . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 26
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . r .
-2 . . . . . .
-3 b . B . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 27
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . r .
-2 . . . . . .
-3 b . . . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 28
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . . . . . .
-3 b . . . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 29
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . . . . . .
-3 b . . . . .
-4 . . . . . .
-5 B . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 30
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . R .
-2 . . . . . .
-3 b . . . . .
-4 . . . . . .
-5 B . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 31
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . R .
-2 . . . . . .
-3 . . . . . .
-4 . b . . . .
-5 B . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 32
-
- 0 1 2 3 4 5
-0 . R . . . R
-1 . . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . b . . . .
-5 B . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 33
-
- 0 1 2 3 4 5
-0 . R . . . R
-1 . . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . .
-5 B . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 34
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 R . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . .
-5 B . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 35
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 R . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . B . . . .
-5 . . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 36
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 R . . . R .
-2 . . . . . .
-3 . . . . . .
-4 . B . . . .
-5 . . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 37
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 R . . . R .
-2 . . . . . .
-3 . . . . . .
-4 . B . B . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 38
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 R . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . B . B . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 39
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 R . . . . .
-2 . . . . . .
-3 . . B . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 40
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . . . . . .
-3 . . B . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 41
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . . . B . .
-3 . . . . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 42
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . R . . .
-2 . . . B . .
-3 . . . . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 43
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . R . . .
-2 . . . B . .
-3 B . . . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 44
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . . . .
-3 B . . . R .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 45
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . B . . . .
-3 . . . . R .
-4 . . . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 46
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . B . R . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 47
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . R . .
-3 . . B . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 48
-
- 0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . R . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 49
-
-Episode 4: winner = player_0, turns = 49
+Episode 4: winner = player_1, turns = 15
 
 === Episode 5 ===
  0 1 2 3 4 5
@@ -1742,7 +1456,7 @@ Turn count: 1
  0 1 2 3 4 5
 0 . b . b . b
 1 b . b . . .
-2 . . . b . .
+2 . . . . . b
 3 . . . . r .
 4 . r . r . .
 5 r . r . r .
@@ -1753,9 +1467,9 @@ Turn count: 2
  0 1 2 3 4 5
 0 . b . b . b
 1 b . b . . .
-2 . . . b . .
-3 r . . . r .
-4 . . . r . .
+2 . . . r . b
+3 . . . . . .
+4 . r . r . .
 5 r . r . r .
 Current player: player_1
 Forced piece: None
@@ -1763,10 +1477,10 @@ Turn count: 3
 
  0 1 2 3 4 5
 0 . b . b . b
-1 b . b . . .
-2 . . . . . .
-3 r . . . . .
-4 . . . r . b
+1 b . . . . .
+2 . . . . . b
+3 . . . . b .
+4 . r . r . .
 5 r . r . r .
 Current player: player_0
 Forced piece: None
@@ -1774,1081 +1488,187 @@ Turn count: 4
 
  0 1 2 3 4 5
 0 . b . b . b
-1 b . b . . .
-2 . r . . . .
-3 . . . . . .
-4 . . . r . b
+1 b . . . . .
+2 . . . . . b
+3 r . . . b .
+4 . . . r . .
 5 r . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 5
 
  0 1 2 3 4 5
-0 . b . b . b
-1 b . . . . .
-2 . . . . . .
-3 b . . . . .
-4 . . . r . b
+0 . b . . . b
+1 b . b . . .
+2 . . . . . b
+3 r . . . b .
+4 . . . r . .
 5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 6
 
  0 1 2 3 4 5
-0 . b . b . b
-1 b . . . . .
-2 . . . . . .
-3 b . r . . .
-4 . . . . . b
+0 . b . . . b
+1 b . b . . .
+2 . r . . . b
+3 . . . . b .
+4 . . . r . .
 5 r . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 7
 
  0 1 2 3 4 5
-0 . b . b . .
-1 b . . . b .
-2 . . . . . .
-3 b . r . . .
-4 . . . . . b
+0 . b . . . b
+1 b . . . . .
+2 . . . . . b
+3 b . . . b .
+4 . . . r . .
 5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 8
 
  0 1 2 3 4 5
-0 . b . b . .
-1 b . . . b .
-2 . . . . . .
-3 b . r . . .
-4 . . . r . b
+0 . b . . . b
+1 b . . . . .
+2 . . . . . b
+3 b . . . b .
+4 . . . r . r
 5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 9
 
  0 1 2 3 4 5
-0 . b . b . .
-1 b . . . . .
+0 . . . . . b
+1 b . b . . .
 2 . . . . . b
-3 b . r . . .
-4 . . . r . b
+3 b . . . b .
+4 . . . r . r
 5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 10
 
  0 1 2 3 4 5
-0 . b . b . .
-1 b . . . . .
-2 . . . . . b
-3 b . r . . .
-4 . r . r . b
-5 r . . . . .
-Current player: player_1
-Forced piece: None
+0 . . . . . b
+1 b . b . . .
+2 . . . r . b
+3 b . . . . .
+4 . . . r . .
+5 r . r . . .
+Current player: player_0
+Forced piece: (2, 3)
 Turn count: 11
 
  0 1 2 3 4 5
-0 . b . b . .
+0 . R . . . b
 1 b . . . . .
 2 . . . . . b
-3 . . r . . .
-4 . . . r . b
-5 r . B . . .
+3 b . . . . .
+4 . . . r . .
+5 r . r . . .
 Current player: player_1
-Forced piece: (5, 2)
+Forced piece: None
 Turn count: 12
 
  0 1 2 3 4 5
-0 . b . b . .
+0 . R . . . b
 1 b . . . . .
-2 . . . . . b
-3 . . r . B .
-4 . . . . . b
-5 r . . . . .
+2 . . . . . .
+3 b . . . b .
+4 . . . r . .
+5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 13
 
  0 1 2 3 4 5
-0 . b . b . .
+0 . R . . . b
 1 b . . . . .
-2 . . . . . b
-3 . . r . B .
-4 . r . . . b
-5 . . . . . .
+2 . . . . . r
+3 b . . . . .
+4 . . . . . .
+5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 14
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . b .
-2 . . . . . b
-3 . . r . B .
-4 . r . . . b
-5 . . . . . .
+0 . R . . . b
+1 b . . . . .
+2 . . . . . r
+3 . . . . . .
+4 . b . . . .
+5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 15
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . b .
-2 . . . . . b
-3 r . r . B .
-4 . . . . . b
-5 . . . . . .
+0 . R . . . b
+1 b . . . . .
+2 . . . . . r
+3 r . . . . .
+4 . . . . . .
+5 r . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 16
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . b .
-2 . . . B . b
-3 r . r . . .
-4 . . . . . b
-5 . . . . . .
+0 . R . . . b
+1 . . . . . .
+2 . b . . . r
+3 r . . . . .
+4 . . . . . .
+5 r . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 17
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . b .
-2 . r . B . b
-3 . . r . . .
-4 . . . . . b
-5 . . . . . .
+0 . R . . . b
+1 . . r . . .
+2 . . . . . r
+3 . . . . . .
+4 . . . . . .
+5 r . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 18
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . b .
-2 . r . . . b
+0 . R . . . .
+1 . . r . b .
+2 . . . . . r
 3 . . . . . .
-4 . B . . . b
-5 . . . . . .
+4 . . . . . .
+5 r . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 19
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . r . b .
-2 . . . . . b
+0 . R . R . .
+1 . . r . . .
+2 . . . . . .
 3 . . . . . .
-4 . B . . . b
-5 . . . . . .
-Current player: player_1
+4 . . . . . .
+5 r . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 20
 
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . b .
-2 . . . b . b
-3 . . . . . .
-4 . B . . . b
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 21
-
-Episode 5: winner = player_1, turns = 21
+Episode 5: winner = player_0, turns = 20
 
 === Episode 6 ===
  0 1 2 3 4 5
 0 . b . b . b
 1 b . b . b .
 2 . . . . . .
-3 . . r . . .
-4 . . . r . r
-5 r . r . r .
-Current player: player_1
-Forced piece: None
-Turn count: 1
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . . . b .
-2 . b . . . .
-3 . . r . . .
-4 . . . r . r
-5 r . r . r .
-Current player: player_0
-Forced piece: None
-Turn count: 2
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . . . b .
-2 . b . . . .
-3 . . r . . .
-4 . r . r . r
-5 . . r . r .
-Current player: player_1
-Forced piece: None
-Turn count: 3
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . . . . .
-2 . b . . . b
-3 . . r . . .
-4 . r . r . r
-5 . . r . r .
-Current player: player_0
-Forced piece: None
-Turn count: 4
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . . . . .
-2 . b . . . b
-3 . . r . r .
-4 . r . r . .
-5 . . r . r .
-Current player: player_1
-Forced piece: None
-Turn count: 5
-
- 0 1 2 3 4 5
-0 . . . b . b
-1 b . b . . .
-2 . b . . . b
-3 . . r . r .
-4 . r . r . .
-5 . . r . r .
-Current player: player_0
-Forced piece: None
-Turn count: 6
-
- 0 1 2 3 4 5
-0 . . . b . b
-1 b . b . . .
-2 . b . . . b
-3 . . r . r .
-4 . r . r . r
-5 . . r . . .
-Current player: player_1
-Forced piece: None
-Turn count: 7
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . b .
-2 . b . . . b
-3 . . r . r .
-4 . r . r . r
-5 . . r . . .
-Current player: player_0
-Forced piece: None
-Turn count: 8
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . b .
-2 . b . r . b
-3 . . . . r .
-4 . r . r . r
-5 . . r . . .
-Current player: player_1
-Forced piece: None
-Turn count: 9
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . . .
-2 . b . . . b
-3 . . b . r .
-4 . r . r . r
-5 . . r . . .
-Current player: player_1
-Forced piece: (3, 2)
-Turn count: 10
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . . .
-2 . b . . . b
-3 . . . . r .
-4 . . . r . r
-5 B . r . . .
-Current player: player_0
-Forced piece: None
-Turn count: 11
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . . .
-2 . b . . . b
-3 . . . . r .
-4 . r . r . r
-5 B . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 12
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . . .
-2 . b . . . b
-3 . . B . r .
-4 . . . r . r
-5 . . . . . .
-Current player: player_1
-Forced piece: (3, 2)
-Turn count: 13
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . . .
-2 . b . . . b
-3 . . . . r .
-4 . . . . . r
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 14
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . b . . .
-2 . b . r . b
-3 . . . . . .
-4 . . . . . r
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 15
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . . . . .
-2 . b . . . b
-3 . . . . b .
-4 . . . . . r
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 16
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . . . . .
-2 . b . r . b
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 17
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . . . . .
-2 . b . r . b
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 18
-
- 0 1 2 3 4 5
-0 . . . b . .
-1 b . . . r .
-2 . b . . . b
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 19
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . b . r .
-2 . b . . . b
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 20
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . b . . .
-2 . b . . . b
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 21
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . b . b . b
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 22
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . b . b . b
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 23
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . b . . . b
-3 . . b . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 24
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . b . . . b
-3 . . b . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 25
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . b . . . b
-3 . . . . . .
-4 . . . b . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 26
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . b . . . b
-3 . . . . . .
-4 . . . b . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 27
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . b . . . b
-3 . . . . . .
-4 . . . b . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 28
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . b . R . b
-3 . . . . . .
-4 . . . b . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 29
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . R . b
-3 . . b . . .
-4 . . . b . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 30
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . . . b
-3 . . . . . .
-4 . R . b . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 31
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . . . b
-3 . . . . . .
-4 . R . . . .
-5 . . B . B .
-Current player: player_0
-Forced piece: None
-Turn count: 32
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . . . b
-3 . . R . . .
-4 . . . . . .
-5 . . B . B .
-Current player: player_1
-Forced piece: None
-Turn count: 33
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . . . b
-3 . . R . . .
-4 . . . B . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 34
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . R . b
-3 . . . . . .
-4 . . . B . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 35
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . R . b
-3 . . . . . .
-4 . . . B . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 36
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . b
-3 . . . . . .
-4 . . . B . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 37
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . b
-3 . . . . B .
-4 . . . B . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 38
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . b
-3 . . . . B .
-4 . . . B . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 39
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . b
-3 . . . . . .
-4 . . . B . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 40
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . b
-3 . . . . . .
-4 . . . B . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 41
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . .
-3 . . . . b .
-4 . . . B . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 42
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . .
-3 . . . . b .
-4 . . . B . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 43
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . .
-3 . . . . b .
-4 . . . . . B
-5 . . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 44
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . .
-3 . . . . b .
-4 . . . . . B
-5 . . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 45
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . .
-3 . . . . b .
-4 . B . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 46
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . R . .
-3 . . . . b .
-4 . B . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 47
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . R . .
-3 . . . . b .
-4 . . . . . B
-5 B . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 48
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . .
-3 . . . . b .
-4 . . . . . B
-5 B . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 49
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . .
-3 . . . . b .
-4 . B . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 50
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . .
-3 . . . . b .
-4 . B . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 51
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . .
-3 . . B . b .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 52
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 b . . . R .
-2 . . . . . .
-3 . . B . b .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 53
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . b . . . .
-3 . . B . b .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 54
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . R
-3 . . B . b .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 55
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . R
-3 . . . . b .
-4 . . . B . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 56
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . b . . . .
-3 . . . . b .
-4 . . . B . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 57
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . b . . . .
-3 . . . . b .
-4 . . . B . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 58
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 . . . . . .
-2 . b . . . .
-3 . . . . b .
-4 . . . B . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 59
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 . . . . . .
-2 . b . . . .
-3 . . . . b .
-4 . . . B . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 60
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . b . . . .
-3 . . . . b .
-4 . . . B . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 61
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . b . . . .
-3 . . . . b .
-4 . . . B . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 62
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . R . .
-3 . . . . b .
-4 . . . B . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 63
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . R . .
-3 . . . . b .
-4 . . . . . .
-5 . . B . B .
-Current player: player_0
-Forced piece: None
-Turn count: 64
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . .
-3 . . . . . .
-4 . . . . . R
-5 . . B . B .
-Current player: player_1
-Forced piece: None
-Turn count: 65
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . .
-3 b . . . . .
-4 . . . . . R
-5 . . B . B .
-Current player: player_0
-Forced piece: None
-Turn count: 66
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . .
-3 b . . . R .
-4 . . . . . .
-5 . . B . B .
-Current player: player_1
-Forced piece: None
-Turn count: 67
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . .
-3 b . . . R .
-4 . . . . . B
-5 . . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 68
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . R
-3 b . . . . .
-4 . . . . . B
-5 . . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 69
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . R
-3 . . . . . .
-4 . b . . . B
-5 . . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 70
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . . . . . .
-3 . . . . . .
-4 . b . . . B
-5 . . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 71
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . B
-5 B . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 72
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 . . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . B
-5 B . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 73
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 . . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . . . B . B
-5 B . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 74
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . . . . . .
-3 . . . . . .
-4 . . . B . B
-5 B . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 75
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
-2 . . . . . .
-3 . . B . . .
-4 . . . . . B
-5 B . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 76
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . R
-3 . . B . . .
-4 . . . . . B
-5 B . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 77
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . R
-3 . . B . . .
-4 . B . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 78
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . . . .
-3 . . B . R .
-4 . B . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 79
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . . . B . .
-3 . . B . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 80
-
-Episode 6: winner = player_1, turns = 80
-
-=== Episode 7 ===
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . b . b .
-2 . . . . . .
 3 . . . . r .
 4 . r . . . r
 5 r . r . r .
@@ -2879,9 +1699,9 @@ Forced piece: None
 Turn count: 3
 
  0 1 2 3 4 5
-0 . b . . . b
+0 . . . b . b
 1 b . . . b .
-2 . b . . . .
+2 . . . b . .
 3 . . . . . .
 4 . r . . . r
 5 r . r . r .
@@ -2890,10 +1710,10 @@ Forced piece: None
 Turn count: 4
 
  0 1 2 3 4 5
-0 . b . . . b
+0 . . . b . b
 1 b . . . b .
-2 . b . . . .
-3 . . r . . .
+2 . . . b . .
+3 r . . . . .
 4 . . . . . r
 5 r . r . r .
 Current player: player_1
@@ -2901,155 +1721,155 @@ Forced piece: None
 Turn count: 5
 
  0 1 2 3 4 5
-0 . b . . . b
-1 b . . . b .
-2 . . . . . .
-3 . . . . . .
-4 . . . b . r
+0 . . . b . b
+1 . . . . b .
+2 . b . b . .
+3 r . . . . .
+4 . . . . . r
 5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 6
 
  0 1 2 3 4 5
-0 . b . . . b
-1 b . . . b .
-2 . . . . . .
-3 . . r . . .
+0 . . . b . b
+1 . . r . b .
+2 . . . b . .
+3 . . . . . .
 4 . . . . . r
-5 r . r . . .
+5 r . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 7
 
  0 1 2 3 4 5
-0 . b . . . b
-1 b . . . . .
-2 . . . b . .
-3 . . r . . .
+0 . . . . . b
+1 . . . . b .
+2 . b . b . .
+3 . . . . . .
 4 . . . . . r
-5 r . r . . .
+5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 8
 
  0 1 2 3 4 5
-0 . b . . . b
-1 b . . . r .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . r
-5 r . r . . .
+0 . . . . . b
+1 . . . . b .
+2 . b . b . .
+3 . . . . r .
+4 . . . . . .
+5 r . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 9
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . . .
-2 . . . b . .
+0 . . . . . b
+1 . . . . b .
+2 . b . . . .
 3 . . . . . .
-4 . . . . . r
-5 r . r . . .
+4 . . . . . b
+5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 10
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . . .
-2 . . . b . .
+0 . . . . . b
+1 . . . . b .
+2 . b . . . .
 3 . . . . . .
-4 . r . . . r
-5 . . r . . .
+4 . r . . . b
+5 . . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 11
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . . .
-2 . . . . . .
-3 . . b . . .
-4 . r . . . r
-5 . . r . . .
+0 . . . . . b
+1 . . . . . .
+2 . b . b . .
+3 . . . . . .
+4 . r . . . b
+5 . . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 12
 
  0 1 2 3 4 5
-0 . b . . . .
-1 b . . . . .
-2 . . . r . .
-3 . . . . . .
-4 . . . . . r
-5 . . r . . .
+0 . . . . . b
+1 . . . . . .
+2 . b . b . .
+3 r . . . . .
+4 . . . . . b
+5 . . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 13
 
  0 1 2 3 4 5
-0 . b . . . .
-1 . . . . . .
-2 . b . r . .
-3 . . . . . .
-4 . . . . . r
-5 . . r . . .
+0 . . . . . .
+1 . . . . b .
+2 . b . b . .
+3 r . . . . .
+4 . . . . . b
+5 . . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 14
 
  0 1 2 3 4 5
-0 . b . . . .
-1 . . . . . .
-2 . b . r . .
+0 . . . . . .
+1 . . r . b .
+2 . . . b . .
 3 . . . . . .
-4 . r . . . r
-5 . . . . . .
+4 . . . . . b
+5 . . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 15
 
  0 1 2 3 4 5
 0 . . . . . .
-1 b . . . . .
-2 . b . r . .
+1 . . r . . .
+2 . . . b . b
 3 . . . . . .
-4 . r . . . r
-5 . . . . . .
+4 . . . . . b
+5 . . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 16
 
  0 1 2 3 4 5
 0 . . . . . .
-1 b . r . . .
-2 . b . . . .
+1 . . r . . .
+2 . . . b . b
 3 . . . . . .
-4 . r . . . r
-5 . . . . . .
+4 . . . r . b
+5 . . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 17
 
  0 1 2 3 4 5
 0 . . . . . .
-1 b . r . . .
-2 . . . . . .
+1 . . r . . .
+2 . . . . . b
 3 . . b . . .
-4 . r . . . r
-5 . . . . . .
+4 . . . r . b
+5 . . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 18
 
  0 1 2 3 4 5
 0 . . . . . .
-1 b . r . . .
-2 . . . r . .
+1 . . r . . .
+2 . r . . . b
 3 . . . . . .
-4 . . . . . r
-5 . . . . . .
+4 . . . . . b
+5 . . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 19
@@ -3057,250 +1877,250 @@ Turn count: 19
  0 1 2 3 4 5
 0 . . . . . .
 1 . . r . . .
-2 . b . r . .
+2 . r . . . b
 3 . . . . . .
-4 . . . . . r
-5 . . . . . .
+4 . . . . . .
+5 . . r . B .
 Current player: player_0
 Forced piece: None
 Turn count: 20
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . r . r .
-2 . b . . . .
+1 . . r . . .
+2 . r . . . b
 3 . . . . . .
-4 . . . . . r
-5 . . . . . .
+4 . r . . . .
+5 . . . . B .
 Current player: player_1
 Forced piece: None
 Turn count: 21
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . r . r .
-2 . . . . . .
-3 b . . . . .
-4 . . . . . r
-5 . . . . . .
+1 . . r . . .
+2 . r . . . .
+3 . . . . b .
+4 . r . . . .
+5 . . . . B .
 Current player: player_0
 Forced piece: None
 Turn count: 22
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . r .
+0 . . . . . .
+1 r . r . . .
 2 . . . . . .
-3 b . . . . .
-4 . . . . . r
-5 . . . . . .
+3 . . . . b .
+4 . r . . . .
+5 . . . . B .
 Current player: player_1
 Forced piece: None
 Turn count: 23
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . r .
+0 . . . . . .
+1 r . r . . .
 2 . . . . . .
 3 . . . . . .
-4 . b . . . r
-5 . . . . . .
+4 . r . b . .
+5 . . . . B .
 Current player: player_0
 Forced piece: None
 Turn count: 24
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . r .
+0 . . . . . .
+1 r . r . . .
 2 . . . . . .
-3 . . . . r .
-4 . b . . . .
-5 . . . . . .
+3 . . r . . .
+4 . . . b . .
+5 . . . . B .
 Current player: player_1
 Forced piece: None
 Turn count: 25
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . r .
+0 . . . . . .
+1 r . r . . .
 2 . . . . . .
-3 . . . . r .
-4 . . . . . .
-5 B . . . . .
+3 . . r . . .
+4 . . . b . B
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 26
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . r .
-2 . . . . . r
+0 . . . . . .
+1 r . r . . .
+2 . r . . . .
 3 . . . . . .
-4 . . . . . .
-5 B . . . . .
+4 . . . b . B
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 27
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . r .
-2 . . . . . r
+0 . . . . . .
+1 r . r . . .
+2 . r . . . .
 3 . . . . . .
-4 . B . . . .
-5 . . . . . .
+4 . . . b . .
+5 . . . . B .
 Current player: player_0
 Forced piece: None
 Turn count: 28
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . R . r .
-2 . . . . . r
+0 . R . . . .
+1 r . . . . .
+2 . r . . . .
 3 . . . . . .
-4 . B . . . .
-5 . . . . . .
+4 . . . b . .
+5 . . . . B .
 Current player: player_1
 Forced piece: None
 Turn count: 29
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . R . r .
-2 . . . . . r
+0 . R . . . .
+1 r . . . . .
+2 . r . . . .
 3 . . . . . .
 4 . . . . . .
-5 B . . . . .
+5 . . B . B .
 Current player: player_0
 Forced piece: None
 Turn count: 30
 
  0 1 2 3 4 5
-0 . . . . . R
-1 . . R . . .
-2 . . . . . r
+0 . R . . . .
+1 r . r . . .
+2 . . . . . .
 3 . . . . . .
 4 . . . . . .
-5 B . . . . .
+5 . . B . B .
 Current player: player_1
 Forced piece: None
 Turn count: 31
 
  0 1 2 3 4 5
-0 . . . . . R
-1 . . R . . .
-2 . . . . . r
+0 . R . . . .
+1 r . r . . .
+2 . . . . . .
 3 . . . . . .
-4 . B . . . .
-5 . . . . . .
+4 . . . B . .
+5 . . B . . .
 Current player: player_0
 Forced piece: None
 Turn count: 32
 
  0 1 2 3 4 5
-0 . . . . . R
-1 . . R . r .
+0 . R . R . .
+1 r . . . . .
 2 . . . . . .
 3 . . . . . .
-4 . B . . . .
-5 . . . . . .
+4 . . . B . .
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 33
 
  0 1 2 3 4 5
-0 . . . . . R
-1 . . R . r .
+0 . R . R . .
+1 r . . . . .
 2 . . . . . .
-3 . . B . . .
-4 . . . . . .
+3 . . . . . .
+4 . B . B . .
 5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 34
 
  0 1 2 3 4 5
-0 . . . . . R
-1 . . . . r .
-2 . R . . . .
-3 . . B . . .
-4 . . . . . .
+0 . R . . . .
+1 r . R . . .
+2 . . . . . .
+3 . . . . . .
+4 . B . B . .
 5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 35
 
  0 1 2 3 4 5
-0 . . . . . R
-1 B . . . r .
+0 . R . . . .
+1 r . R . . .
 2 . . . . . .
 3 . . . . . .
-4 . . . . . .
-5 . . . . . .
+4 . . . B . .
+5 . . B . . .
 Current player: player_0
 Forced piece: None
 Turn count: 36
 
  0 1 2 3 4 5
-0 . . . R . R
-1 B . . . . .
+0 . R . R . .
+1 r . . . . .
 2 . . . . . .
 3 . . . . . .
-4 . . . . . .
-5 . . . . . .
+4 . . . B . .
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 37
 
  0 1 2 3 4 5
-0 . . . R . R
-1 . . . . . .
-2 . B . . . .
-3 . . . . . .
+0 . R . R . .
+1 r . . . . .
+2 . . . . . .
+3 . . . . B .
 4 . . . . . .
-5 . . . . . .
+5 . . B . . .
 Current player: player_0
 Forced piece: None
 Turn count: 38
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . R .
-2 . B . . . .
-3 . . . . . .
+0 . R . . . .
+1 r . R . . .
+2 . . . . . .
+3 . . . . B .
 4 . . . . . .
-5 . . . . . .
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 39
 
  0 1 2 3 4 5
-0 . . . R . .
-1 . . . . R .
-2 . . . . . .
-3 B . . . . .
+0 . R . . . .
+1 r . R . . .
+2 . . . B . .
+3 . . . . . .
 4 . . . . . .
-5 . . . . . .
+5 . . B . . .
 Current player: player_0
 Forced piece: None
 Turn count: 40
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . R . R .
+0 . R . . . .
+1 r . . . . .
 2 . . . . . .
-3 B . . . . .
+3 . . . . R .
 4 . . . . . .
-5 . . . . . .
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 41
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . R . R .
+0 . R . . . .
+1 r . . . . .
 2 . . . . . .
-3 . . . . . .
+3 . . . . R .
 4 . B . . . .
 5 . . . . . .
 Current player: player_0
@@ -3309,9 +2129,9 @@ Turn count: 42
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . . . R .
-2 . R . . . .
-3 . . . . . .
+1 r . R . . .
+2 . . . . . .
+3 . . . . R .
 4 . B . . . .
 5 . . . . . .
 Current player: player_1
@@ -3320,31 +2140,31 @@ Turn count: 43
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . . . R .
-2 . R . . . .
-3 . . . . . .
+1 r . R . . .
+2 . . . . . .
+3 . . . . R .
 4 . . . . . .
-5 . . B . . .
+5 B . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 44
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
+0 . R . . . .
+1 r . . . . .
 2 . . . . . .
-3 R . . . . .
+3 . . . . R .
 4 . . . . . .
-5 . . B . . .
+5 B . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 45
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
+0 . R . . . .
+1 r . . . . .
 2 . . . . . .
-3 R . . . . .
+3 . . . . R .
 4 . B . . . .
 5 . . . . . .
 Current player: player_0
@@ -3352,17 +2172,416 @@ Forced piece: None
 Turn count: 46
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . R .
+0 . R . . . .
+1 r . . . . .
 2 . . . . . .
 3 . . . . . .
-4 . . . . . .
-5 . . R . . .
-Current player: player_0
+4 . B . R . .
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 47
 
-Episode 7: winner = player_0, turns = 47
+ 0 1 2 3 4 5
+0 . R . . . .
+1 r . . . . .
+2 . . . . . .
+3 . . B . . .
+4 . . . R . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 48
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 r . . . . .
+2 . R . . . .
+3 . . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 49
+
+Episode 6: winner = player_0, turns = 49
+
+=== Episode 7 ===
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . b . b .
+2 . . . . . .
+3 . . . . r .
+4 . r . r . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 1
+
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . b . . .
+2 . . . b . .
+3 . . . . r .
+4 . r . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 2
+
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . b . . .
+2 . . . b . r
+3 . . . . . .
+4 . r . r . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 3
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . b . b .
+2 . . . b . r
+3 . . . . . .
+4 . r . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 4
+
+ 0 1 2 3 4 5
+0 . b . R . b
+1 b . b . . .
+2 . . . b . .
+3 . . . . . .
+4 . r . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: (0, 3)
+Turn count: 5
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . . .
+2 . R . b . .
+3 . . . . . .
+4 . r . r . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 6
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 . . . . . .
+2 . . . b . .
+3 . . b . . .
+4 . r . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 7
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 . . . . . .
+2 . r . b . .
+3 . . . . . .
+4 . r . . . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 8
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . . .
+2 . r . b . .
+3 . . . . . .
+4 . r . . . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 9
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . . .
+2 . r . b . .
+3 . . r . . .
+4 . . . . . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 10
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . . .
+2 . r . . . .
+3 . . . . . .
+4 . b . . . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 11
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . . .
+2 . r . . . .
+3 r . . . . .
+4 . . . . . .
+5 r . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 12
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . . . . .
+2 . . . . . .
+3 r . b . . .
+4 . . . . . .
+5 r . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 13
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . . . . .
+2 . . . . . .
+3 r . b . . .
+4 . r . . . .
+5 . . . . r .
+Current player: player_1
+Forced piece: None
+Turn count: 14
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . . . . .
+2 . . . . . .
+3 r . . . . .
+4 . . . . . .
+5 B . . . r .
+Current player: player_0
+Forced piece: None
+Turn count: 15
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . . . . .
+2 . . . . . .
+3 r . . . . .
+4 . . . r . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 16
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . b .
+2 . . . . . .
+3 r . . . . .
+4 . . . r . .
+5 B . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 17
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . b .
+2 . r . . . .
+3 . . . . . .
+4 . . . r . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 18
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . . .
+2 . r . b . .
+3 . . . . . .
+4 . . . r . .
+5 B . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 19
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . r . . .
+2 . . . b . .
+3 . . . . . .
+4 . . . r . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 20
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . r . . .
+2 . . . . . .
+3 . . b . . .
+4 . . . r . .
+5 B . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 21
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . r . . .
+2 . r . . . .
+3 . . . . . .
+4 . . . . . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 22
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . r . . .
+2 . r . . . .
+3 . . . . . .
+4 . B . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 23
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 . . . . . .
+2 . r . . . .
+3 . . . . . .
+4 . B . . . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 24
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 . . . . . .
+2 . r . . . .
+3 . . . . . .
+4 . . . . . .
+5 B . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 25
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 R . . . . .
+2 . r . . . .
+3 . . . . . .
+4 . . . . . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 26
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 R . . . . .
+2 . r . . . .
+3 . . . . . .
+4 . B . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 27
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 R . r . . .
+2 . . . . . .
+3 . . . . . .
+4 . B . . . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 28
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 R . r . . .
+2 . . . . . .
+3 B . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 29
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 . . r . . .
+2 . . . . . .
+3 B . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 30
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 . . r . . .
+2 . B . . . .
+3 . . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 31
+
+ 0 1 2 3 4 5
+0 . R . R . .
+1 . . . . . .
+2 . B . . . .
+3 . . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 32
+
+ 0 1 2 3 4 5
+0 . R . R . .
+1 . . B . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 33
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . . . . .
+2 . . . R . .
+3 . . . . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 34
+
+Episode 7: winner = player_0, turns = 34
 
 === Episode 8 ===
  0 1 2 3 4 5
@@ -3378,8 +2597,8 @@ Turn count: 1
 
  0 1 2 3 4 5
 0 . b . b . b
-1 . . b . b .
-2 . b . . . .
+1 b . . . b .
+2 . . . b . .
 3 r . . . . .
 4 . . . r . r
 5 r . r . r .
@@ -3389,707 +2608,11 @@ Turn count: 2
 
  0 1 2 3 4 5
 0 . b . b . b
-1 . . b . b .
-2 . b . . . .
-3 r . . . r .
-4 . . . . . r
-5 r . r . r .
-Current player: player_1
-Forced piece: None
-Turn count: 3
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 . . b . . .
-2 . b . b . .
-3 r . . . r .
-4 . . . . . r
-5 r . r . r .
-Current player: player_0
-Forced piece: None
-Turn count: 4
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 . . b . . .
-2 . b . b . .
-3 r . . . r .
-4 . r . . . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 5
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 . . b . . .
-2 . b . . . .
-3 r . b . r .
-4 . r . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 6
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 . . b . . .
-2 . b . r . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 7
-
- 0 1 2 3 4 5
-0 . . . b . b
-1 b . b . . .
-2 . b . r . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 8
-
- 0 1 2 3 4 5
-0 . R . b . b
-1 b . . . . .
-2 . b . . . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 9
-
- 0 1 2 3 4 5
-0 . R . . . b
-1 b . b . . .
-2 . b . . . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 10
-
- 0 1 2 3 4 5
-0 . . . . . b
-1 b . . . . .
-2 . b . R . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 11
-
- 0 1 2 3 4 5
-0 . . . . . .
 1 b . . . b .
-2 . b . R . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 12
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . b . . . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_1
-Forced piece: None
-Turn count: 13
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . .
-3 r . b . r .
-4 . . . . . r
-5 r . . . r .
-Current player: player_0
-Forced piece: None
-Turn count: 14
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . .
-3 r . b . r .
-4 . . . r . r
-5 r . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 15
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . . . .
-3 r . . . r .
-4 . . . . . r
-5 r . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 16
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . r . .
+2 . . . b . .
 3 r . . . . .
-4 . . . . . r
-5 r . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 17
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . r . .
-3 r . . . . .
-4 . . . B . r
-5 r . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 18
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 b . . . . .
-2 . . . r . .
-3 r . . . . .
-4 . r . B . r
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 19
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 . . . . . .
-2 . b . r . .
-3 r . . . . .
-4 . r . B . r
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 20
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 . . r . . .
-2 . . . r . .
-3 . . . . . .
-4 . r . B . r
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 21
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 . . r . . .
-2 . . . r . .
-3 . . . . . .
-4 . r . . . r
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 22
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 . . r . . .
-2 . . . r . .
-3 . . r . . .
-4 . . . . . r
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 23
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 . . r . . .
-2 . . . r . .
-3 . . r . . .
-4 . . . B . r
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 24
-
- 0 1 2 3 4 5
-0 . R . . . R
-1 . . . . . .
-2 . . . r . .
-3 . . r . . .
-4 . . . B . r
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 25
-
- 0 1 2 3 4 5
-0 . R . . . R
-1 . . . . . .
-2 . B . r . .
-3 . . . . . .
-4 . . . . . r
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 26
-
- 0 1 2 3 4 5
-0 . R . . . R
-1 . . . . r .
-2 . B . . . .
-3 . . . . . .
-4 . . . . . r
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 27
-
- 0 1 2 3 4 5
-0 . R . . . R
-1 . . . . r .
-2 . . . . . .
-3 B . . . . .
-4 . . . . . r
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 28
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . . .
-2 . . . . . .
-3 B . . . . .
-4 . . . . . r
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 29
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . . .
-2 . B . . . .
-3 . . . . . .
-4 . . . . . r
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 30
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . . .
-2 . B . . . .
-3 . . . . r .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 31
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . . .
-2 . . . . . .
-3 . . B . r .
-4 . . . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 32
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . . .
-2 . . . . . r
-3 . . B . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 33
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . . .
-2 . . . . . r
-3 . . . . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 34
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 . . R . . .
-2 . . . . . r
-3 . . . . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 35
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 . . R . . .
-2 . . . . . r
-3 . . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 36
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 . . R . r .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 37
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 . . R . r .
-2 . . . . . .
-3 . . . . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 38
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . r .
-2 . . . . . .
-3 . . . . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 39
-
- 0 1 2 3 4 5
-0 . R . R . R
-1 . . . . r .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_0
-Forced piece: None
-Turn count: 40
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 R . . . r .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 41
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 R . . . r .
-2 . . . . . .
-3 . . . . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 42
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 R . R . r .
-2 . . . . . .
-3 . . . . . .
-4 . B . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 43
-
- 0 1 2 3 4 5
-0 . . . . . R
-1 R . R . r .
-2 . . . . . .
-3 . . B . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 44
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 R . R . . .
-2 . . . . . .
-3 . . B . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 45
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 R . R . . .
-2 . . . . . .
-3 . . . . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 46
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 . . R . . .
-2 . R . . . .
-3 . . . . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 47
-
- 0 1 2 3 4 5
-0 . . . R . R
-1 . . R . . .
-2 . R . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 48
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 . . R . R .
-2 . R . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 49
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 . . R . R .
-2 . R . . . .
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 50
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . R .
-2 . R . . . .
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 51
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . R .
-2 . R . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 52
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . R . R . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 53
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . R . R . .
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 54
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 R . . . . .
-2 . . . R . .
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 55
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 R . . . . .
-2 . . . R . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 56
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . R . R . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 57
-
- 0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
-2 . R . R . .
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 58
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 R . . . . .
-2 . R . R . .
-3 . . . . . .
-4 . . . . . B
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 59
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 R . . . . .
-2 . R . R . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . B .
-Current player: player_0
-Forced piece: None
-Turn count: 60
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 R . . . . .
-2 . R . . . .
-3 . . . . R .
-4 . . . . . .
-5 . . . . B .
-Current player: player_1
-Forced piece: None
-Turn count: 61
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 R . . . . .
-2 . R . . . .
-3 . . . . R .
-4 . . . B . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 62
-
- 0 1 2 3 4 5
-0 . . . R . .
-1 R . . . . .
-2 . R . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . R . . .
-Current player: player_0
-Forced piece: None
-Turn count: 63
-
-Episode 8: winner = player_0, turns = 63
-
-=== Episode 9 ===
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . b . b .
-2 . . . . . .
-3 . . r . . .
-4 . . . r . r
-5 r . r . r .
-Current player: player_1
-Forced piece: None
-Turn count: 1
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . . . b .
-2 . b . . . .
-3 . . r . . .
-4 . . . r . r
-5 r . r . r .
-Current player: player_0
-Forced piece: None
-Turn count: 2
-
- 0 1 2 3 4 5
-0 . b . b . b
-1 b . . . b .
-2 . b . . . .
-3 . . r . r .
-4 . . . r . .
-5 r . r . r .
+4 . r . r . r
+5 . . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 3
@@ -4098,9 +2621,9 @@ Turn count: 3
 0 . b . b . b
 1 b . . . b .
 2 . . . . . .
-3 b . r . r .
-4 . . . r . .
-5 r . r . r .
+3 r . . . b .
+4 . r . r . r
+5 . . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 4
@@ -4109,9 +2632,9 @@ Turn count: 4
 0 . b . b . b
 1 b . . . b .
 2 . . . . . r
-3 b . r . . .
-4 . . . r . .
-5 r . r . r .
+3 r . . . . .
+4 . r . . . r
+5 . . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 5
@@ -4120,9 +2643,9 @@ Turn count: 5
 0 . b . . . b
 1 b . b . b .
 2 . . . . . r
-3 b . r . . .
-4 . . . r . .
-5 r . r . r .
+3 r . . . . .
+4 . r . . . r
+5 . . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 6
@@ -4131,9 +2654,9 @@ Turn count: 6
 0 . b . R . b
 1 b . b . . .
 2 . . . . . .
-3 b . r . . .
-4 . . . r . .
-5 r . r . r .
+3 r . . . . .
+4 . r . . . r
+5 . . r . r .
 Current player: player_0
 Forced piece: (0, 3)
 Turn count: 7
@@ -4142,98 +2665,728 @@ Turn count: 7
 0 . b . . . b
 1 b . . . . .
 2 . R . . . .
-3 b . r . . .
-4 . . . r . .
-5 r . r . r .
+3 r . . . . .
+4 . r . . . r
+5 . . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 8
 
  0 1 2 3 4 5
-0 . . . . . b
-1 b . b . . .
-2 . R . . . .
-3 b . r . . .
-4 . . . r . .
-5 r . r . r .
-Current player: player_0
-Forced piece: None
+0 . b . . . b
+1 . . . . . .
+2 . . . . . .
+3 r . b . . .
+4 . r . . . r
+5 . . r . r .
+Current player: player_1
+Forced piece: (3, 2)
 Turn count: 9
 
  0 1 2 3 4 5
-0 . . . R . b
-1 b . . . . .
+0 . b . . . b
+1 . . . . . .
 2 . . . . . .
-3 b . r . . .
-4 . . . r . .
-5 r . r . r .
-Current player: player_1
+3 r . . . . .
+4 . . . . . r
+5 B . r . r .
+Current player: player_0
 Forced piece: None
 Turn count: 10
 
  0 1 2 3 4 5
-0 . . . R . .
-1 b . . . b .
+0 . b . . . b
+1 . . . . . .
 2 . . . . . .
-3 b . r . . .
-4 . . . r . .
-5 r . r . r .
-Current player: player_0
+3 r . . . . .
+4 . . . r . r
+5 B . r . . .
+Current player: player_1
 Forced piece: None
 Turn count: 11
 
  0 1 2 3 4 5
+0 . b . . . b
+1 . . . . . .
+2 . . . . . .
+3 r . . . . .
+4 . B . r . r
+5 . . r . . .
+Current player: player_0
+Forced piece: None
+Turn count: 12
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 . . . . . .
+2 . . . . . .
+3 r . . . r .
+4 . B . r . .
+5 . . r . . .
+Current player: player_1
+Forced piece: None
+Turn count: 13
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . b . . .
+2 . . . . . .
+3 r . . . r .
+4 . B . r . .
+5 . . r . . .
+Current player: player_0
+Forced piece: None
+Turn count: 14
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . b . . .
+2 . r . . . .
+3 . . . . r .
+4 . B . r . .
+5 . . r . . .
+Current player: player_1
+Forced piece: None
+Turn count: 15
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . . . . .
+2 . . . . . .
+3 b . . . r .
+4 . B . r . .
+5 . . r . . .
+Current player: player_0
+Forced piece: None
+Turn count: 16
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 . . . . . .
+2 . . . r . .
+3 b . . . . .
+4 . B . r . .
+5 . . r . . .
+Current player: player_1
+Forced piece: None
+Turn count: 17
+
+ 0 1 2 3 4 5
 0 . . . . . .
+1 . . . . b .
+2 . . . r . .
+3 b . . . . .
+4 . B . r . .
+5 . . r . . .
+Current player: player_0
+Forced piece: None
+Turn count: 18
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 . . . . . .
+2 . . . . . .
+3 b . . . . .
+4 . B . r . .
+5 . . r . . .
+Current player: player_1
+Forced piece: None
+Turn count: 19
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 . . . . . .
+2 . . . . . .
+3 b . . . . .
+4 . . . r . .
+5 B . r . . .
+Current player: player_0
+Forced piece: None
+Turn count: 20
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 . . . . . .
+2 . . . . . .
+3 b . . . . .
+4 . r . r . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 21
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 . . . . . .
+2 . . . . . .
+3 b . B . . .
+4 . . . r . .
+5 . . . . . .
+Current player: player_1
+Forced piece: (3, 2)
+Turn count: 22
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 . . . . . .
+2 . . . . . .
+3 b . . . . .
+4 . . . . . .
+5 . . . . B .
+Current player: player_0
+Forced piece: None
+Turn count: 23
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 b . . . . .
+4 . . . . . .
+5 . . . . B .
+Current player: player_1
+Forced piece: None
+Turn count: 24
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 b . . . . .
+4 . . . B . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 25
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . . . . .
+2 . . . . . .
+3 b . . . . .
+4 . . . B . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 26
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . . . . .
+2 . . . . . .
+3 b . . . . .
+4 . . . . . .
+5 . . . . B .
+Current player: player_0
+Forced piece: None
+Turn count: 27
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 b . . . . .
+4 . . . . . .
+5 . . . . B .
+Current player: player_1
+Forced piece: None
+Turn count: 28
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . b . . . .
+5 . . . . B .
+Current player: player_0
+Forced piece: None
+Turn count: 29
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . . .
+2 . . . R . .
+3 . . . . . .
+4 . b . . . .
+5 . . . . B .
+Current player: player_1
+Forced piece: None
+Turn count: 30
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . . .
+2 . . . R . .
+3 . . . . . .
+4 . b . B . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 31
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . b . B . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 32
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . b . . . .
+5 . . B . . .
+Current player: player_0
+Forced piece: None
+Turn count: 33
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . b . . . .
+5 . . B . . .
+Current player: player_1
+Forced piece: None
+Turn count: 34
+
+ 0 1 2 3 4 5
+0 . . . . . R
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . b . B . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 35
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . b . B . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 36
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . . . B . .
+5 . . B . . .
+Current player: player_0
+Forced piece: None
+Turn count: 37
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . B . .
+5 . . B . . .
+Current player: player_1
+Forced piece: None
+Turn count: 38
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . B . B . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 39
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . B . B . .
+5 . . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 40
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . . . B . .
+5 B . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 41
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . B . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 42
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . . . . .
+2 . . . . . .
+3 . . B . . .
+4 . . . . . .
+5 B . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 43
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . R . . .
+2 . . . . . .
+3 . . B . . .
+4 . . . . . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 44
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . R . . .
+2 . B . . . .
+3 . . . . . .
+4 . . . . . .
+5 B . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 45
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . . .
+2 . . . . . .
+3 R . . . . .
+4 . . . . . .
+5 B . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 46
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . . .
+2 . . . . . .
+3 R . . . . .
+4 . B . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 47
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 . . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . .
+5 . . R . . .
+Current player: player_0
+Forced piece: None
+Turn count: 48
+
+Episode 8: winner = player_0, turns = 48
+
+=== Episode 9 ===
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . b . b .
+2 . . . . . .
+3 . . . . r .
+4 . r . r . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 1
+
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . . . b .
+2 . b . . . .
+3 . . . . r .
+4 . r . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 2
+
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . . . b .
+2 . b . r . .
+3 . . . . . .
+4 . r . r . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 3
+
+ 0 1 2 3 4 5
+0 . b . b . b
 1 b . . . . .
-2 . . . . . R
-3 b . r . . .
+2 . b . . . .
+3 . . b . . .
+4 . r . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 4
+
+ 0 1 2 3 4 5
+0 . b . b . b
+1 b . . . . .
+2 . b . r . .
+3 . . . . . .
 4 . . . r . .
 5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 5
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . . . b .
+2 . b . r . .
+3 . . . . . .
+4 . . . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 6
+
+ 0 1 2 3 4 5
+0 . b . . . b
+1 b . r . b .
+2 . b . . . .
+3 . . . . . .
+4 . . . r . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 7
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . b .
+2 . b . b . .
+3 . . . . . .
+4 . . . r . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 8
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . b .
+2 . b . b . .
+3 . . r . . .
+4 . . . . . .
+5 r . r . r .
+Current player: player_1
+Forced piece: None
+Turn count: 9
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . b .
+2 . b . . . .
+3 . . . . . .
+4 . b . . . .
+5 r . r . r .
+Current player: player_0
+Forced piece: None
+Turn count: 10
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . . . b .
+2 . b . . . .
+3 r . . . . .
+4 . . . . . .
+5 r . . . r .
+Current player: player_0
+Forced piece: (3, 0)
+Turn count: 11
+
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . r . b .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . .
+5 r . . . r .
 Current player: player_1
 Forced piece: None
 Turn count: 12
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . . . R
-3 . . r . . .
-4 . b . r . .
-5 r . r . r .
+0 . . . . . b
+1 b . r . . .
+2 . . . . . b
+3 . . . . . .
+4 . . . . . .
+5 r . . . r .
 Current player: player_0
 Forced piece: None
 Turn count: 13
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . . . . .
-2 . . . . . R
-3 r . r . . .
+0 . . . . . b
+1 b . r . . .
+2 . . . . . b
+3 . . . . . .
 4 . . . r . .
-5 r . . . r .
+5 r . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 14
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . . . . .
-2 . b . . . R
-3 r . r . . .
+0 . . . . . b
+1 b . r . . .
+2 . . . . . .
+3 . . . . b .
 4 . . . r . .
-5 r . . . r .
-Current player: player_1
+5 r . . . . .
+Current player: player_0
 Forced piece: None
 Turn count: 15
 
-Episode 9: winner = player_0, turns = 15
+ 0 1 2 3 4 5
+0 . . . . . b
+1 b . r . . .
+2 . . . . . r
+3 . . . . . .
+4 . . . . . .
+5 r . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 16
+
+ 0 1 2 3 4 5
+0 . . . . . .
+1 b . r . b .
+2 . . . . . r
+3 . . . . . .
+4 . . . . . .
+5 r . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 17
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 b . r . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . . . .
+5 r . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 18
+
+ 0 1 2 3 4 5
+0 . . . R . .
+1 . . r . . .
+2 . b . . . .
+3 . . . . . .
+4 . . . . . .
+5 r . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 19
+
+ 0 1 2 3 4 5
+0 . R . R . .
+1 . . . . . .
+2 . b . . . .
+3 . . . . . .
+4 . . . . . .
+5 r . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 20
+
+ 0 1 2 3 4 5
+0 . R . R . .
+1 . . . . . .
+2 . . . . . .
+3 . . b . . .
+4 . . . . . .
+5 r . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 21
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . b . . .
+4 . . . . . .
+5 r . . . . .
+Current player: player_1
+Forced piece: None
+Turn count: 22
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . . . . .
+4 . b . . . .
+5 r . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 23
+
+ 0 1 2 3 4 5
+0 . R . . . .
+1 . . . . R .
+2 . . . . . .
+3 . . r . . .
+4 . . . . . .
+5 . . . . . .
+Current player: player_0
+Forced piece: None
+Turn count: 24
+
+Episode 9: winner = player_0, turns = 24
 
 === Episode 10 ===
  0 1 2 3 4 5
 0 . b . b . b
 1 b . b . b .
 2 . . . . . .
-3 . . r . . .
+3 r . . . . .
 4 . . . r . r
 5 r . r . r .
 Current player: player_1
@@ -4244,7 +3397,7 @@ Turn count: 1
 0 . b . b . b
 1 b . b . . .
 2 . . . . . b
-3 . . r . . .
+3 r . . . . .
 4 . . . r . r
 5 r . r . r .
 Current player: player_0
@@ -4255,9 +3408,9 @@ Turn count: 2
 0 . b . b . b
 1 b . b . . .
 2 . . . . . b
-3 . . r . . .
-4 . r . r . r
-5 . . r . r .
+3 r . . . r .
+4 . . . r . .
+5 r . r . r .
 Current player: player_1
 Forced piece: None
 Turn count: 3
@@ -4266,9 +3419,9 @@ Turn count: 3
 0 . b . b . .
 1 b . b . b .
 2 . . . . . b
-3 . . r . . .
-4 . r . r . r
-5 . . r . r .
+3 r . . . r .
+4 . . . r . .
+5 r . r . r .
 Current player: player_0
 Forced piece: None
 Turn count: 4
@@ -4276,10 +3429,10 @@ Turn count: 4
  0 1 2 3 4 5
 0 . b . b . .
 1 b . b . b .
-2 . r . . . b
-3 . . . . . .
-4 . r . r . r
-5 . . r . r .
+2 . . . . . b
+3 r . . . r .
+4 . . . r . r
+5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 5
@@ -4287,250 +3440,250 @@ Turn count: 5
  0 1 2 3 4 5
 0 . b . b . .
 1 b . . . b .
-2 . . . . . b
-3 b . . . . .
-4 . r . r . r
-5 . . r . r .
+2 . b . . . b
+3 r . . . r .
+4 . . . r . r
+5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 6
 
  0 1 2 3 4 5
 0 . b . b . .
-1 b . . . b .
+1 b . r . b .
 2 . . . . . b
-3 b . . . r .
-4 . r . r . .
-5 . . r . r .
+3 . . . . r .
+4 . . . r . r
+5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 7
 
  0 1 2 3 4 5
-0 . b . b . .
-1 b . . . . .
-2 . . . b . b
-3 b . . . r .
-4 . r . r . .
-5 . . r . r .
+0 . b . . . .
+1 b . . . b .
+2 . b . . . b
+3 . . . . r .
+4 . . . r . r
+5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 8
 
  0 1 2 3 4 5
-0 . b . b . .
-1 b . r . . .
-2 . . . . . b
-3 b . . . . .
-4 . r . r . .
-5 . . r . r .
+0 . b . . . .
+1 b . . . b .
+2 . b . . . b
+3 . . r . r .
+4 . . . . . r
+5 r . r . . .
 Current player: player_1
 Forced piece: None
 Turn count: 9
 
  0 1 2 3 4 5
-0 . . . b . .
-1 b . . . . .
-2 . . . b . b
-3 b . . . . .
-4 . r . r . .
-5 . . r . r .
+0 . b . . . .
+1 b . . . b .
+2 . b . . . .
+3 . . r . . .
+4 . . . b . r
+5 r . r . . .
 Current player: player_0
 Forced piece: None
 Turn count: 10
 
  0 1 2 3 4 5
-0 . . . b . .
-1 b . . . . .
-2 . . . b . b
-3 b . . . . .
-4 . r . r . r
-5 . . r . . .
+0 . b . . . .
+1 b . . . b .
+2 . b . . . .
+3 . . r . r .
+4 . . . . . r
+5 r . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 11
 
  0 1 2 3 4 5
-0 . . . . . .
+0 . b . . . .
 1 b . . . b .
-2 . . . b . b
-3 b . . . . .
-4 . r . r . r
-5 . . r . . .
+2 . . . . . .
+3 . . . . r .
+4 . . . b . r
+5 r . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 12
 
  0 1 2 3 4 5
-0 . . . . . .
+0 . b . . . .
 1 b . . . b .
-2 . . . b . b
-3 b . r . . .
-4 . . . r . r
-5 . . r . . .
+2 . . . . . r
+3 . . . . . .
+4 . . . b . r
+5 r . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 13
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . . . b .
-2 . . . . . b
-3 b . . . . .
-4 . b . r . r
-5 . . r . . .
+0 . b . . . .
+1 . . . . b .
+2 . b . . . r
+3 . . . . . .
+4 . . . b . r
+5 r . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 14
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . . . b .
-2 . . . . . b
-3 b . . . r .
-4 . b . r . .
-5 . . r . . .
+0 . b . R . .
+1 . . . . . .
+2 . b . . . .
+3 . . . . . .
+4 . . . b . r
+5 r . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 15
 
  0 1 2 3 4 5
-0 . . . . . .
+0 . . . R . .
 1 b . . . . .
-2 . . . b . b
-3 b . . . r .
-4 . b . r . .
-5 . . r . . .
+2 . b . . . .
+3 . . . . . .
+4 . . . b . r
+5 r . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 16
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . r . . .
-2 . . . . . b
-3 b . . . . .
-4 . b . r . .
-5 . . r . . .
+0 . . . R . .
+1 b . . . . .
+2 . b . . . .
+3 . . . . . .
+4 . r . b . r
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 17
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . r . . .
-2 . . . . . .
-3 b . . . b .
-4 . b . r . .
-5 . . r . . .
+0 . . . R . .
+1 b . . . . .
+2 . b . . . .
+3 . . . . . .
+4 . r . . . r
+5 . . B . . .
 Current player: player_0
 Forced piece: None
 Turn count: 18
 
  0 1 2 3 4 5
-0 . . . . . .
-1 b . r . . .
-2 . . . . . r
-3 b . . . . .
-4 . b . . . .
-5 . . r . . .
+0 . . . R . .
+1 b . . . . .
+2 . b . . . .
+3 . . r . . .
+4 . . . . . r
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 19
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . r . . .
-2 . b . . . r
-3 b . . . . .
-4 . b . . . .
-5 . . r . . .
+0 . . . R . .
+1 b . . . . .
+2 . . . . . .
+3 . . . . . .
+4 . . . b . r
+5 . . B . . .
 Current player: player_0
 Forced piece: None
 Turn count: 20
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . b . . . r
-3 b . . . . .
-4 . b . . . .
-5 . . r . . .
+0 . . . R . .
+1 b . . . . .
+2 . . . . . .
+3 . . . . r .
+4 . . . b . .
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 21
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . . .
-2 . . . . . r
-3 b . b . . .
-4 . b . . . .
-5 . . r . . .
+0 . . . R . .
+1 b . . . . .
+2 . . . . . .
+3 . . . . r .
+4 . B . b . .
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 22
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . r .
+0 . . . . . .
+1 b . . . R .
 2 . . . . . .
-3 b . b . . .
-4 . b . . . .
-5 . . r . . .
+3 . . . . r .
+4 . B . b . .
+5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 23
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . r .
+0 . . . . . .
+1 b . . . R .
 2 . . . . . .
-3 b . . . . .
-4 . b . b . .
-5 . . r . . .
+3 . . B . r .
+4 . . . b . .
+5 . . . . . .
 Current player: player_0
 Forced piece: None
 Turn count: 24
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . r .
-2 . . . . . .
-3 b . . . r .
-4 . b . . . .
+0 . . . . . .
+1 b . . . R .
+2 . . . r . .
+3 . . B . . .
+4 . . . b . .
 5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 25
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . r .
-2 . . . . . .
-3 b . . . r .
+0 . . . . . .
+1 b . . . R .
+2 . . . r . .
+3 . . B . . .
 4 . . . . . .
-5 B . . . . .
+5 . . B . . .
 Current player: player_0
 Forced piece: None
 Turn count: 26
 
  0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
+0 . . . . . .
+1 b . r . R .
 2 . . . . . .
-3 b . . . r .
+3 . . B . . .
 4 . . . . . .
-5 B . . . . .
+5 . . B . . .
 Current player: player_1
 Forced piece: None
 Turn count: 27
 
  0 1 2 3 4 5
-0 . R . R . .
-1 . . . . . .
+0 . . . . . .
+1 b . r . R .
 2 . . . . . .
-3 b . . . r .
+3 . . B . . .
 4 . B . . . .
 5 . . . . . .
 Current player: player_0
@@ -4538,10 +3691,10 @@ Forced piece: None
 Turn count: 28
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . R .
-2 . . . . . .
-3 b . . . r .
+0 . . . . . .
+1 b . r . . .
+2 . . . R . .
+3 . . B . . .
 4 . B . . . .
 5 . . . . . .
 Current player: player_1
@@ -4549,11 +3702,11 @@ Forced piece: None
 Turn count: 29
 
  0 1 2 3 4 5
-0 . R . . . .
-1 . . . . R .
+0 . . . . . .
+1 b . r . B .
 2 . . . . . .
-3 b . B . r .
-4 . . . . . .
+3 . . . . . .
+4 . B . . . .
 5 . . . . . .
 Current player: player_0
 Forced piece: None
@@ -4561,10 +3714,10 @@ Turn count: 30
 
  0 1 2 3 4 5
 0 . R . . . .
-1 . . . . . .
-2 . . . R . .
-3 b . B . r .
-4 . . . . . .
+1 b . . . B .
+2 . . . . . .
+3 . . . . . .
+4 . B . . . .
 5 . . . . . .
 Current player: player_1
 Forced piece: None
@@ -4572,9 +3725,9 @@ Turn count: 31
 
  0 1 2 3 4 5
 0 . R . . . .
-1 . . . . B .
+1 b . . . B .
 2 . . . . . .
-3 b . . . r .
+3 B . . . . .
 4 . . . . . .
 5 . . . . . .
 Current player: player_0
@@ -4583,9 +3736,9 @@ Turn count: 32
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . R . B .
+1 b . R . B .
 2 . . . . . .
-3 b . . . r .
+3 B . . . . .
 4 . . . . . .
 5 . . . . . .
 Current player: player_1
@@ -4593,10 +3746,10 @@ Forced piece: None
 Turn count: 33
 
  0 1 2 3 4 5
-0 . . . . . B
-1 . . R . . .
+0 . . . B . .
+1 b . R . . .
 2 . . . . . .
-3 b . . . r .
+3 B . . . . .
 4 . . . . . .
 5 . . . . . .
 Current player: player_0
@@ -4604,10 +3757,10 @@ Forced piece: None
 Turn count: 34
 
  0 1 2 3 4 5
-0 . . . . . B
-1 . . R . . .
-2 . . . r . .
-3 b . . . . .
+0 . R . B . .
+1 b . . . . .
+2 . . . . . .
+3 B . . . . .
 4 . . . . . .
 5 . . . . . .
 Current player: player_1
@@ -4615,10 +3768,10 @@ Forced piece: None
 Turn count: 35
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . R . B .
-2 . . . r . .
-3 b . . . . .
+0 . R . . . .
+1 b . B . . .
+2 . . . . . .
+3 B . . . . .
 4 . . . . . .
 5 . . . . . .
 Current player: player_0
@@ -4626,10 +3779,10 @@ Forced piece: None
 Turn count: 36
 
  0 1 2 3 4 5
-0 . . . . . R
-1 . . R . . .
-2 . . . . . .
-3 b . . . . .
+0 . . . . . .
+1 b . . . . .
+2 . . . R . .
+3 B . . . . .
 4 . . . . . .
 5 . . . . . .
 Current player: player_1
@@ -4637,11 +3790,11 @@ Forced piece: None
 Turn count: 37
 
  0 1 2 3 4 5
-0 . . . . . R
-1 . . R . . .
-2 . . . . . .
+0 . . . . . .
+1 b . . . . .
+2 . B . R . .
 3 . . . . . .
-4 . b . . . .
+4 . . . . . .
 5 . . . . . .
 Current player: player_0
 Forced piece: None
@@ -4649,79 +3802,24 @@ Turn count: 38
 
  0 1 2 3 4 5
 0 . . . . . .
-1 . . R . R .
-2 . . . . . .
+1 b . R . . .
+2 . B . . . .
 3 . . . . . .
-4 . b . . . .
+4 . . . . . .
 5 . . . . . .
 Current player: player_1
 Forced piece: None
 Turn count: 39
 
  0 1 2 3 4 5
-0 . . . . . .
-1 . . R . R .
+0 . . . B . .
+1 b . . . . .
 2 . . . . . .
 3 . . . . . .
 4 . . . . . .
-5 . . B . . .
-Current player: player_0
+5 . . . . . .
+Current player: player_1
 Forced piece: None
 Turn count: 40
 
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . R . . .
-2 . . . R . .
-3 . . . . . .
-4 . . . . . .
-5 . . B . . .
-Current player: player_1
-Forced piece: None
-Turn count: 41
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . R . . .
-2 . . . R . .
-3 . . . . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_0
-Forced piece: None
-Turn count: 42
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . R . . .
-2 . . . . . .
-3 . . R . . .
-4 . . . B . .
-5 . . . . . .
-Current player: player_1
-Forced piece: None
-Turn count: 43
-
- 0 1 2 3 4 5
-0 . . . . . .
-1 . . R . . .
-2 . B . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: (2, 1)
-Turn count: 44
-
- 0 1 2 3 4 5
-0 . . . B . .
-1 . . . . . .
-2 . . . . . .
-3 . . . . . .
-4 . . . . . .
-5 . . . . . .
-Current player: player_1
-Forced piece: (2, 1)
-Turn count: 45
-
-Episode 10: winner = player_1, turns = 45
+Episode 10: winner = player_1, turns = 40
